@@ -1,0 +1,11 @@
+{
+  "_fv": 28,
+  "_type": "tab",
+  "definition": {
+    "name": "One Piece",
+    "icon": {
+      "value": "CUSTOM:GumGumFruit"
+    },
+    "showSearch": true
+  }
+}

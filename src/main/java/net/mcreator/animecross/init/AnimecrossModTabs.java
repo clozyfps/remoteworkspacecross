@@ -13,6 +13,7 @@ import net.minecraft.world.item.CreativeModeTab;
 public class AnimecrossModTabs {
 	public static CreativeModeTab TAB_AOT;
 	public static CreativeModeTab TAB_DRAGON_BALL;
+	public static CreativeModeTab TAB_ONE_PIECE;
 
 	public static void load() {
 		TAB_AOT = new CreativeModeTab("tabaot") {
@@ -30,6 +31,17 @@ public class AnimecrossModTabs {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(AnimecrossModItems.ONE_STAR_DRAGON_BALL.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return true;
+			}
+		}.setBackgroundSuffix("item_search.png");
+		TAB_ONE_PIECE = new CreativeModeTab("tabone_piece") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(AnimecrossModItems.GUM_GUM_FRUIT.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)
