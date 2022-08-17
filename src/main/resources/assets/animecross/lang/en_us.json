@@ -1,5 +1,10 @@
 {
+  "item.animecross.odm_equip": "ODM Equip",
+  "item.animecross.onelevel": "One level",
   "item.animecross.test_2": "Test 2",
   "item.animecross.test": "Test",
-  "item.animecross.e": "E"
+  "item.animecross.odmstring": "Odmstring",
+  "item.animecross.aircanister": "Air canister",
+  "itemGroup.tabaot": "AOT",
+  "item.animecross.odm_gear": "ODM Gear"
 }

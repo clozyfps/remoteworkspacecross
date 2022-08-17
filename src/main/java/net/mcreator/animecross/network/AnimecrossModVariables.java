@@ -75,6 +75,11 @@ public class AnimecrossModVariables {
 			clone.max_power = original.max_power;
 			clone.level = original.level;
 			clone.power = original.power;
+			clone.player_joins_first_time = original.player_joins_first_time;
+			clone.exp = original.exp;
+			clone.user_name = original.user_name;
+			clone.has_odm_gear = original.has_odm_gear;
+			clone.odm_air = original.odm_air;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -114,6 +119,11 @@ public class AnimecrossModVariables {
 		public double max_power = 0;
 		public double level = 0;
 		public double power = 0;
+		public double player_joins_first_time = 0;
+		public double exp = 0;
+		public String user_name = "\"\"";
+		public double has_odm_gear = 0;
+		public double odm_air = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -125,6 +135,11 @@ public class AnimecrossModVariables {
 			nbt.putDouble("max_power", max_power);
 			nbt.putDouble("level", level);
 			nbt.putDouble("power", power);
+			nbt.putDouble("player_joins_first_time", player_joins_first_time);
+			nbt.putDouble("exp", exp);
+			nbt.putString("user_name", user_name);
+			nbt.putDouble("has_odm_gear", has_odm_gear);
+			nbt.putDouble("odm_air", odm_air);
 			return nbt;
 		}
 
@@ -133,6 +148,11 @@ public class AnimecrossModVariables {
 			max_power = nbt.getDouble("max_power");
 			level = nbt.getDouble("level");
 			power = nbt.getDouble("power");
+			player_joins_first_time = nbt.getDouble("player_joins_first_time");
+			exp = nbt.getDouble("exp");
+			user_name = nbt.getString("user_name");
+			has_odm_gear = nbt.getDouble("has_odm_gear");
+			odm_air = nbt.getDouble("odm_air");
 		}
 	}
 
@@ -161,6 +181,11 @@ public class AnimecrossModVariables {
 					variables.max_power = message.data.max_power;
 					variables.level = message.data.level;
 					variables.power = message.data.power;
+					variables.player_joins_first_time = message.data.player_joins_first_time;
+					variables.exp = message.data.exp;
+					variables.user_name = message.data.user_name;
+					variables.has_odm_gear = message.data.has_odm_gear;
+					variables.odm_air = message.data.odm_air;
 				}
 			});
 			context.setPacketHandled(true);

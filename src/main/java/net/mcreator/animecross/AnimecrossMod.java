@@ -26,7 +26,9 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.animecross.init.AnimecrossModTabs;
 import net.mcreator.animecross.init.AnimecrossModItems;
+import net.mcreator.animecross.init.AnimecrossModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -42,10 +44,11 @@ public class AnimecrossMod {
 	private static int messageID = 0;
 
 	public AnimecrossMod() {
-
+		AnimecrossModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		AnimecrossModItems.REGISTRY.register(bus);
+		AnimecrossModEntities.REGISTRY.register(bus);
 
 	}
 

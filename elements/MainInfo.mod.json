@@ -1,0 +1,133 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "tablet.png",
+          "use1Xscale": false,
+          "name": "tablet.png",
+          "x": 55,
+          "y": -18
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Level:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Level:",
+          "x": 99,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:level>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:level>",
+          "x": 133,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "XP:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "XP:",
+          "x": 100,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "/50",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "/50",
+          "x": 148,
+          "y": 77
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:exp>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:exp>",
+          "x": 119,
+          "y": 77
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "62646a56e09d74b8a876aebf03a71304.png",
+          "use1Xscale": false,
+          "name": "62646a56e09d74b8a876aebf03a71304.png",
+          "x": 94,
+          "y": 8
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "User:",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "User:",
+          "x": 99,
+          "y": 181
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:user_name>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:user_name>",
+          "x": 127,
+          "y": 181
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

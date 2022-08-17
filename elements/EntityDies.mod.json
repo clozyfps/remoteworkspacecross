@@ -1,0 +1,7 @@
+{
+  "_fv": 28,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"event_trigger\" deletable=\"false\" x=\"351\" y=\"197\"><field name=\"trigger\">entity_dies</field><next><block type=\"entity_add_item\"><value name=\"amount\"><block type=\"math_random_int_between\"><value name=\"min\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"max\"><block type=\"math_number\"><field name=\"NUM\">10</field></block></value></block></value><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:Onelevel</field></block></value><value name=\"entity\"><block type=\"source_entity_from_deps\"></block></value></block></next></block></xml>"
+  }
+}

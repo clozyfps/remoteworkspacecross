@@ -1,20 +1,205 @@
 {
   "mod_elements": [
     {
-      "name": "E",
-      "type": "tool",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "e"
-    },
-    {
       "name": "Powershow",
       "type": "overlay",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "registry_name": "powershow"
+    },
+    {
+      "name": "PlayerJoins",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Onelevel",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onelevel"
+    },
+    {
+      "name": "OnelevelItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onelevel_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EntityDies",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MainInfo",
+      "type": "gui",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "main_info"
+    },
+    {
+      "name": "ODMGear",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_gear",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "AOT",
+      "type": "tab",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aot",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "Aircanister",
+      "type": "item",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aircanister",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "AircanisterRightclicked",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "aircanister_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "ODMEquip",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_equip",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "ODMEquipRightclicked",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_equip_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "OdmstringWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odmstring_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "Odmstring",
+      "type": "rangeditem",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odmstring",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "ODMGearRightclicked",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_gear_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
     }
   ],
   "variable_elements": [
@@ -35,19 +220,59 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "player_joins_first_time",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "exp",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "user_name",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "has_odm_gear",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "odm_air",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.animecross.odm_equip": "ODM Equip",
+      "item.animecross.onelevel": "One level",
       "item.animecross.test_2": "Test 2",
       "item.animecross.test": "Test",
-      "item.animecross.e": "E"
+      "item.animecross.odmstring": "Odmstring",
+      "item.animecross.aircanister": "Air canister",
+      "itemGroup.tabaot": "AOT",
+      "item.animecross.odm_gear": "ODM Gear"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "attack on titan",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "animecross",
