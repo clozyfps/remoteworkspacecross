@@ -72,9 +72,9 @@ public class AnimecrossModVariables {
 					.orElse(new PlayerVariables()));
 			PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new PlayerVariables()));
-			clone.power = original.power;
 			clone.max_power = original.max_power;
 			clone.level = original.level;
+			clone.power = original.power;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -111,9 +111,9 @@ public class AnimecrossModVariables {
 	}
 
 	public static class PlayerVariables {
-		public double power = 0;
 		public double max_power = 0;
 		public double level = 0;
+		public double power = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -122,17 +122,17 @@ public class AnimecrossModVariables {
 
 		public Tag writeNBT() {
 			CompoundTag nbt = new CompoundTag();
-			nbt.putDouble("power", power);
 			nbt.putDouble("max_power", max_power);
 			nbt.putDouble("level", level);
+			nbt.putDouble("power", power);
 			return nbt;
 		}
 
 		public void readNBT(Tag Tag) {
 			CompoundTag nbt = (CompoundTag) Tag;
-			power = nbt.getDouble("power");
 			max_power = nbt.getDouble("max_power");
 			level = nbt.getDouble("level");
+			power = nbt.getDouble("power");
 		}
 	}
 
@@ -158,9 +158,9 @@ public class AnimecrossModVariables {
 				if (!context.getDirection().getReceptionSide().isServer()) {
 					PlayerVariables variables = ((PlayerVariables) Minecraft.getInstance().player.getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new PlayerVariables()));
-					variables.power = message.data.power;
 					variables.max_power = message.data.max_power;
 					variables.level = message.data.level;
+					variables.power = message.data.power;
 				}
 			});
 			context.setPacketHandled(true);

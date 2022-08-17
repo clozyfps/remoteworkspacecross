@@ -1,12 +1,15 @@
 {
-  "mod_elements": [],
-  "variable_elements": [
+  "mod_elements": [
     {
-      "name": "power",
-      "type": "number",
-      "scope": "player_persistent",
-      "value": "0"
-    },
+      "name": "E",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "e"
+    }
+  ],
+  "variable_elements": [
     {
       "name": "max_power",
       "type": "number",
@@ -18,11 +21,20 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "power",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.animecross.test_2": "Test 2",
+      "item.animecross.test": "Test"
+    }
   },
   "foldersRoot": {
     "name": "~",
