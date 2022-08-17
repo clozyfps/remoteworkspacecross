@@ -1,0 +1,161 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "tablet.png",
+          "use1Xscale": false,
+          "name": "tablet.png",
+          "x": 54,
+          "y": -13
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Welcome To Anime Cross!",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Welcome To Anime Cross!",
+          "x": 152,
+          "y": 11
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Pick your class and race.",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Pick your class and race.",
+          "x": 147,
+          "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Class",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Class",
+          "x": 114,
+          "y": 54
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Swordsman",
+          "width": 72,
+          "height": 20,
+          "name": "Swordsman",
+          "x": 93,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Pirate",
+          "width": 56,
+          "height": 20,
+          "name": "Pirate",
+          "x": 100,
+          "y": 92
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Assassin",
+          "width": 67,
+          "height": 20,
+          "name": "Assassin",
+          "x": 95,
+          "y": 115
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Race",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Race",
+          "x": 279,
+          "y": 55
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Slime",
+          "width": 51,
+          "height": 20,
+          "name": "Slime",
+          "x": 265,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Cursed Spirit",
+          "width": 93,
+          "height": 20,
+          "name": "Cursed Spirit",
+          "x": 246,
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Evil Spirit",
+          "width": 82,
+          "height": 20,
+          "name": "Evil Spirit",
+          "x": 249,
+          "y": 115
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Saiyan",
+          "width": 56,
+          "height": 20,
+          "name": "Saiyan",
+          "x": 262,
+          "y": 140
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

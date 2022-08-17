@@ -13,6 +13,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.animecross.client.gui.ShenronGifScreen;
 import net.mcreator.animecross.client.gui.MainInfoScreen;
+import net.mcreator.animecross.client.gui.ClassguiScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class AnimecrossModScreens {
@@ -21,6 +22,7 @@ public class AnimecrossModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(AnimecrossModMenus.MAIN_INFO, MainInfoScreen::new);
 			MenuScreens.register(AnimecrossModMenus.SHENRON_GIF, ShenronGifScreen::new);
+			MenuScreens.register(AnimecrossModMenus.CLASSGUI, ClassguiScreen::new);
 		});
 	}
 }

@@ -81,6 +81,7 @@ public class AnimecrossModVariables {
 			clone.has_odm_gear = original.has_odm_gear;
 			clone.odm_air = original.odm_air;
 			clone.has7dragonballs = original.has7dragonballs;
+			clone.playerjoinedalready = original.playerjoinedalready;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -126,6 +127,7 @@ public class AnimecrossModVariables {
 		public double has_odm_gear = 0;
 		public double odm_air = 0;
 		public boolean has7dragonballs = false;
+		public boolean playerjoinedalready = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -143,6 +145,7 @@ public class AnimecrossModVariables {
 			nbt.putDouble("has_odm_gear", has_odm_gear);
 			nbt.putDouble("odm_air", odm_air);
 			nbt.putBoolean("has7dragonballs", has7dragonballs);
+			nbt.putBoolean("playerjoinedalready", playerjoinedalready);
 			return nbt;
 		}
 
@@ -157,6 +160,7 @@ public class AnimecrossModVariables {
 			has_odm_gear = nbt.getDouble("has_odm_gear");
 			odm_air = nbt.getDouble("odm_air");
 			has7dragonballs = nbt.getBoolean("has7dragonballs");
+			playerjoinedalready = nbt.getBoolean("playerjoinedalready");
 		}
 	}
 
@@ -191,6 +195,7 @@ public class AnimecrossModVariables {
 					variables.has_odm_gear = message.data.has_odm_gear;
 					variables.odm_air = message.data.odm_air;
 					variables.has7dragonballs = message.data.has7dragonballs;
+					variables.playerjoinedalready = message.data.playerjoinedalready;
 				}
 			});
 			context.setPacketHandled(true);

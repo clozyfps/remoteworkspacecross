@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 
 import net.mcreator.animecross.world.inventory.ShenronGifMenu;
 import net.mcreator.animecross.world.inventory.MainInfoMenu;
+import net.mcreator.animecross.world.inventory.ClassguiMenu;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ public class AnimecrossModMenus {
 	public static final MenuType<MainInfoMenu> MAIN_INFO = register("main_info", (id, inv, extraData) -> new MainInfoMenu(id, inv, extraData));
 	public static final MenuType<ShenronGifMenu> SHENRON_GIF = register("shenron_gif",
 			(id, inv, extraData) -> new ShenronGifMenu(id, inv, extraData));
+	public static final MenuType<ClassguiMenu> CLASSGUI = register("classgui", (id, inv, extraData) -> new ClassguiMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

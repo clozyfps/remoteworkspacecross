@@ -356,6 +356,14 @@
       "locked_code": false,
       "registry_name": "open_info",
       "path": "~/Misc"
+    },
+    {
+      "name": "Classgui",
+      "type": "gui",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "classgui"
     }
   ],
   "variable_elements": [
@@ -409,6 +417,12 @@
     },
     {
       "name": "has7dragonballs",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "playerjoinedalready",
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
