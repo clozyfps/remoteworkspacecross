@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "I",
+    "keyBindingName": "Open Info",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenInfoOnKeyPressed"
+    }
+  }
+}

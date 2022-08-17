@@ -281,6 +281,81 @@
       "locked_code": false,
       "registry_name": "shenron_gif",
       "path": "~/DBZ"
+    },
+    {
+      "name": "SeventhDragonBallRightclicked",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seventh_dragon_ball_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "OpenInfoOnKeyPressed",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_info_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Misc"
+    },
+    {
+      "name": "OpenInfo",
+      "type": "keybind",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_info",
+      "path": "~/Misc"
     }
   ],
   "variable_elements": [
@@ -345,6 +420,7 @@
       "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
       "item.animecross.onelevel": "One level",
       "item.animecross.test_2": "Test 2",
+      "key.animecross.open_info": "Open Info",
       "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
       "item.animecross.odmstring": "Odmstring",
       "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
@@ -369,6 +445,10 @@
       },
       {
         "name": "DBZ",
+        "children": []
+      },
+      {
+        "name": "Misc",
         "children": []
       }
     ]

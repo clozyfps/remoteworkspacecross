@@ -75,6 +75,7 @@ public class ShenronGifScreen extends AbstractContainerScreen<ShenronGifMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, "Hurry up and choose human.", 143, 174, -15952887);
 	}
 
 	@Override
@@ -87,7 +88,11 @@ public class ShenronGifScreen extends AbstractContainerScreen<ShenronGifMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 111, 155, 20, new TextComponent("I want to become stronger"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 111, 155, 20, new TextComponent("I want to become stronger!"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 138, 92, 20, new TextComponent("I want money!"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 166, 123, 20, new TextComponent("I want a rare item!"), e -> {
 		}));
 	}
 }
