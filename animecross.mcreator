@@ -499,6 +499,15 @@
         ]
       },
       "path": "~/One Piece"
+    },
+    {
+      "name": "GumGumPistol",
+      "type": "rangeditem",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gum_gum_pistol",
+      "path": "~/Tensura"
     }
   ],
   "variable_elements": [
@@ -598,7 +607,8 @@
       "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
       "item.animecross.test": "Test",
       "item.animecross.aircanister": "Air canister",
-      "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball"
+      "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",
+      "item.animecross.gum_gum_pistol": "Gum Gum Pistol"
     }
   },
   "foldersRoot": {

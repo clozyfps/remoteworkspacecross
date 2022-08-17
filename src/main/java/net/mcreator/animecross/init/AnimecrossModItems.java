@@ -21,6 +21,7 @@ import net.mcreator.animecross.item.OdmstringItem;
 import net.mcreator.animecross.item.ODMGearItem;
 import net.mcreator.animecross.item.ODMGearArmorItem;
 import net.mcreator.animecross.item.ODMEquipItem;
+import net.mcreator.animecross.item.GumGumPistolItem;
 import net.mcreator.animecross.item.GumGumFruitItem;
 import net.mcreator.animecross.item.FourStarDragonBallItem;
 import net.mcreator.animecross.item.FiveStarDragonBallItem;
@@ -47,4 +48,5 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> ODM_GEAR_ARMOR_LEGGINGS = REGISTRY.register("odm_gear_armor_leggings",
 			() -> new ODMGearArmorItem.Leggings());
 	public static final RegistryObject<Item> GUM_GUM_FRUIT = REGISTRY.register("gum_gum_fruit", () -> new GumGumFruitItem());
+	public static final RegistryObject<Item> GUM_GUM_PISTOL = REGISTRY.register("gum_gum_pistol", () -> new GumGumPistolItem());
 }

@@ -98,7 +98,7 @@ public abstract class ODMGearArmorItem extends ArmorItem {
 
 		@Override
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
-			return "animecross:textures/odmgear3dtesxture.png";
+			return "animecross:textures/odm_tex.png";
 		}
 	}
 }

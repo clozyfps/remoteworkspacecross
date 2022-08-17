@@ -16,5 +16,6 @@ public class AnimecrossModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(AnimecrossModEntities.ODMSTRING.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossModEntities.GUM_GUM_PISTOL.get(), ThrownItemRenderer::new);
 	}
 }

@@ -1,0 +1,39 @@
+{
+  "_fv": 28,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "gumgumpistol",
+    "customModelName": "Normal",
+    "name": "Gum Gum Pistol",
+    "specialInfo": [
+      "A iconic move of Luffy."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:OnePiece"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 99999,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": false,
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 11.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.STRIPPED_BIRCH_WOOD"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

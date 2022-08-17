@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.animecross.entity.OdmstringEntity;
+import net.mcreator.animecross.entity.GumGumPistolEntity;
 import net.mcreator.animecross.AnimecrossMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -24,6 +25,9 @@ public class AnimecrossModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, AnimecrossMod.MODID);
 	public static final RegistryObject<EntityType<OdmstringEntity>> ODMSTRING = register("projectile_odmstring",
 			EntityType.Builder.<OdmstringEntity>of(OdmstringEntity::new, MobCategory.MISC).setCustomClientFactory(OdmstringEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GumGumPistolEntity>> GUM_GUM_PISTOL = register("projectile_gum_gum_pistol",
+			EntityType.Builder.<GumGumPistolEntity>of(GumGumPistolEntity::new, MobCategory.MISC).setCustomClientFactory(GumGumPistolEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
