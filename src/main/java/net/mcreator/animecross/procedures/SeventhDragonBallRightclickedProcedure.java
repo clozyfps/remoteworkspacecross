@@ -24,25 +24,78 @@ public class SeventhDragonBallRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		{
-			if (entity instanceof ServerPlayer _ent) {
-				BlockPos _bpos = new BlockPos(x, y, z);
-				NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
-					@Override
-					public Component getDisplayName() {
-						return new TextComponent("ShenronGif");
-					}
+		if ((entity instanceof Player _playerHasItem
+				? _playerHasItem.getInventory().contains(new ItemStack(AnimecrossModItems.ONE_STAR_DRAGON_BALL.get()))
+				: false)
+				&& (entity instanceof Player _playerHasItem
+						? _playerHasItem.getInventory().contains(new ItemStack(AnimecrossModItems.TWO_STAR_DRAGON_BALL.get()))
+						: false)
+				&& (entity instanceof Player _playerHasItem
+						? _playerHasItem.getInventory().contains(new ItemStack(AnimecrossModItems.THREE_STAR_DRAGON_BALL.get()))
+						: false)
+				&& (entity instanceof Player _playerHasItem
+						? _playerHasItem.getInventory().contains(new ItemStack(AnimecrossModItems.FOUR_STAR_DRAGON_BALL.get()))
+						: false)
+				&& (entity instanceof Player _playerHasItem
+						? _playerHasItem.getInventory().contains(new ItemStack(AnimecrossModItems.FIVE_STAR_DRAGON_BALL.get()))
+						: false)
+				&& (entity instanceof Player _playerHasItem
+						? _playerHasItem.getInventory().contains(new ItemStack(AnimecrossModItems.SIXTH_STAR_DRAGON_BALL.get()))
+						: false)
+				&& (entity instanceof Player _playerHasItem
+						? _playerHasItem.getInventory().contains(new ItemStack(AnimecrossModItems.SEVENTH_DRAGON_BALL.get()))
+						: false)) {
+			{
+				if (entity instanceof ServerPlayer _ent) {
+					BlockPos _bpos = new BlockPos(x, y, z);
+					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						@Override
+						public Component getDisplayName() {
+							return new TextComponent("ShenronGif");
+						}
 
-					@Override
-					public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
-						return new ShenronGifMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
-					}
-				}, _bpos);
+						@Override
+						public AbstractContainerMenu createMenu(int id, Inventory inventory, Player player) {
+							return new ShenronGifMenu(id, inventory, new FriendlyByteBuf(Unpooled.buffer()).writeBlockPos(_bpos));
+						}
+					}, _bpos);
+				}
 			}
-		}
-		if (entity instanceof Player _player) {
-			ItemStack _stktoremove = new ItemStack(AnimecrossModItems.SEVENTH_DRAGON_BALL.get());
-			_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.SEVENTH_DRAGON_BALL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.SIXTH_STAR_DRAGON_BALL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.FIVE_STAR_DRAGON_BALL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.FOUR_STAR_DRAGON_BALL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.THREE_STAR_DRAGON_BALL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.TWO_STAR_DRAGON_BALL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.ONE_STAR_DRAGON_BALL.get());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+						_player.inventoryMenu.getCraftSlots());
+			}
 		}
 	}
 }

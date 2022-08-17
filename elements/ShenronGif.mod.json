@@ -3,7 +3,7 @@
   "_type": "gui",
   "definition": {
     "type": 0,
-    "width": 300,
+    "width": 311,
     "height": 200,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
@@ -16,8 +16,8 @@
           "image": "shenron-dragon-ball-dragon-de-dragon-ball-11562867803osejy5ngkp.png",
           "use1Xscale": true,
           "name": "shenron-dragon-ball-dragon-de-dragon-ball-11562867803osejy5ngkp.png",
-          "x": 146,
-          "y": 25
+          "x": 223,
+          "y": 29
         }
       },
       {
@@ -27,8 +27,8 @@
           "width": 155,
           "height": 20,
           "name": "I want to become stronger!",
-          "x": 68,
-          "y": 131
+          "x": 61,
+          "y": 24
         }
       },
       {
@@ -38,8 +38,8 @@
           "width": 92,
           "height": 20,
           "name": "I want money!",
-          "x": 68,
-          "y": 158
+          "x": 61,
+          "y": 50
         }
       },
       {
@@ -49,8 +49,8 @@
           "width": 123,
           "height": 20,
           "name": "I want a rare item!",
-          "x": 68,
-          "y": 186
+          "x": 61,
+          "y": 77
         }
       },
       {
@@ -62,8 +62,30 @@
             "falpha": 0.0
           },
           "name": "Hurry up and choose human.",
-          "x": 207,
-          "y": 194
+          "x": 225,
+          "y": 201
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "I wish to change my race!",
+          "width": 155,
+          "height": 20,
+          "name": "I wish to change my race!",
+          "x": 61,
+          "y": 102
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "I wish to change my class!",
+          "width": 160,
+          "height": 20,
+          "name": "I wish to change my class!",
+          "x": 61,
+          "y": 129
         }
       }
     ],

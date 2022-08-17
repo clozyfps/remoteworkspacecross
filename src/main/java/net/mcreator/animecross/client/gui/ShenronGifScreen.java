@@ -31,7 +31,7 @@ public class ShenronGifScreen extends AbstractContainerScreen<ShenronGifMenu> {
 		this.y = container.y;
 		this.z = container.z;
 		this.entity = container.entity;
-		this.imageWidth = 300;
+		this.imageWidth = 311;
 		this.imageHeight = 200;
 	}
 
@@ -54,7 +54,7 @@ public class ShenronGifScreen extends AbstractContainerScreen<ShenronGifMenu> {
 
 		RenderSystem.setShaderTexture(0,
 				new ResourceLocation("animecross:textures/shenron-dragon-ball-dragon-de-dragon-ball-11562867803osejy5ngkp.png"));
-		this.blit(ms, this.leftPos + 82, this.topPos + 5, 0, 0, 140, 96, 140, 96);
+		this.blit(ms, this.leftPos + 165, this.topPos + 9, 0, 0, 140, 96, 140, 96);
 
 		RenderSystem.disableBlend();
 	}
@@ -75,7 +75,7 @@ public class ShenronGifScreen extends AbstractContainerScreen<ShenronGifMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Hurry up and choose human.", 143, 174, -15952887);
+		this.font.draw(poseStack, "Hurry up and choose human.", 167, 181, -15952887);
 	}
 
 	@Override
@@ -88,11 +88,15 @@ public class ShenronGifScreen extends AbstractContainerScreen<ShenronGifMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 111, 155, 20, new TextComponent("I want to become stronger!"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 3, this.topPos + 4, 155, 20, new TextComponent("I want to become stronger!"), e -> {
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 138, 92, 20, new TextComponent("I want money!"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 3, this.topPos + 30, 92, 20, new TextComponent("I want money!"), e -> {
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 4, this.topPos + 166, 123, 20, new TextComponent("I want a rare item!"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 3, this.topPos + 57, 123, 20, new TextComponent("I want a rare item!"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 3, this.topPos + 82, 155, 20, new TextComponent("I wish to change my race!"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 3, this.topPos + 109, 160, 20, new TextComponent("I wish to change my class!"), e -> {
 		}));
 	}
 }
