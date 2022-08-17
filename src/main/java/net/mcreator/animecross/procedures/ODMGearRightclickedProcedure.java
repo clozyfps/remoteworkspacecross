@@ -23,7 +23,7 @@ public class ODMGearRightclickedProcedure {
 					double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 							.orElse(new AnimecrossModVariables.PlayerVariables())).odm_air - 1;
 					entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.odm_air = _setval;
+						capability.has_odm_gear = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}

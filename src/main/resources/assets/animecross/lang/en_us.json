@@ -1,10 +1,18 @@
 {
-  "item.animecross.odm_equip": "ODM Equip",
+  "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
   "item.animecross.onelevel": "One level",
   "item.animecross.test_2": "Test 2",
-  "item.animecross.test": "Test",
+  "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
   "item.animecross.odmstring": "Odmstring",
-  "item.animecross.aircanister": "Air canister",
+  "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
   "itemGroup.tabaot": "AOT",
-  "item.animecross.odm_gear": "ODM Gear"
+  "item.animecross.odm_gear": "ODM Gear",
+  "item.animecross.odm_equip": "ODM Equip",
+  "itemGroup.tabdragon_ball": "Dragon Ball",
+  "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
+  "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
+  "item.animecross.test": "Test",
+  "item.animecross.two_star_dragon_ball": "Two Star Dragon Ball",
+  "item.animecross.aircanister": "Air canister",
+  "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball"
 }

@@ -200,6 +200,87 @@
         ]
       },
       "path": "~/attack on titan"
+    },
+    {
+      "name": "OneStarDragonBall",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "one_star_dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "DragonBall",
+      "type": "tab",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TwoStarDragonBall",
+      "type": "item",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "two_star_dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "ThreeStarDragonBall",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "three_star_dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "FourStarDragonBall",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "four_star_dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "FiveStarDragonBall",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "five_star_dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "SixthStarDragonBall",
+      "type": "item",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sixth_star_dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "SeventhDragonBall",
+      "type": "item",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "seventh_dragon_ball",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "ShenronGif",
+      "type": "gui",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shenron_gif",
+      "path": "~/DBZ"
     }
   ],
   "variable_elements": [
@@ -250,19 +331,33 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "has7dragonballs",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.animecross.odm_equip": "ODM Equip",
+      "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
       "item.animecross.onelevel": "One level",
       "item.animecross.test_2": "Test 2",
-      "item.animecross.test": "Test",
+      "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
       "item.animecross.odmstring": "Odmstring",
-      "item.animecross.aircanister": "Air canister",
+      "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
       "itemGroup.tabaot": "AOT",
-      "item.animecross.odm_gear": "ODM Gear"
+      "item.animecross.odm_gear": "ODM Gear",
+      "item.animecross.odm_equip": "ODM Equip",
+      "itemGroup.tabdragon_ball": "Dragon Ball",
+      "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
+      "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
+      "item.animecross.test": "Test",
+      "item.animecross.two_star_dragon_ball": "Two Star Dragon Ball",
+      "item.animecross.aircanister": "Air canister",
+      "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball"
     }
   },
   "foldersRoot": {
@@ -270,6 +365,10 @@
     "children": [
       {
         "name": "attack on titan",
+        "children": []
+      },
+      {
+        "name": "DBZ",
         "children": []
       }
     ]

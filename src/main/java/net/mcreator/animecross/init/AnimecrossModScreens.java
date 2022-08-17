@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.animecross.client.gui.ShenronGifScreen;
 import net.mcreator.animecross.client.gui.MainInfoScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -19,6 +20,7 @@ public class AnimecrossModScreens {
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
 			MenuScreens.register(AnimecrossModMenus.MAIN_INFO, MainInfoScreen::new);
+			MenuScreens.register(AnimecrossModMenus.SHENRON_GIF, ShenronGifScreen::new);
 		});
 	}
 }
