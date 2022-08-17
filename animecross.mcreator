@@ -364,6 +364,38 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "classgui"
+    },
+    {
+      "name": "PlayerJoins2BcImConfused",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_joins_2_bc_im_confused",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -464,6 +496,10 @@
       {
         "name": "Misc",
         "children": []
+      },
+      {
+        "name": "Tensura",
+        "children": []
       }
     ]
   },
@@ -481,6 +517,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.animecross",
     "lockBaseModFiles": false
   },
