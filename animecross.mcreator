@@ -29,7 +29,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.animecross.test": "Test"
+      "item.animecross.test_2": "Test 2",
+      "item.animecross.test": "Test",
+      "item.animecross.e": "E"
     }
   },
   "foldersRoot": {
