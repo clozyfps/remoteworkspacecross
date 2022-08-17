@@ -12,12 +12,14 @@ import net.minecraft.world.item.Item;
 
 import net.mcreator.animecross.item.TwoStarDragonBallItem;
 import net.mcreator.animecross.item.ThreeStarDragonBallItem;
+import net.mcreator.animecross.item.SlimeItem;
 import net.mcreator.animecross.item.SixthStarDragonBallItem;
 import net.mcreator.animecross.item.SeventhDragonBallItem;
 import net.mcreator.animecross.item.OnelevelItem;
 import net.mcreator.animecross.item.OneStarDragonBallItem;
 import net.mcreator.animecross.item.OdmstringItem;
 import net.mcreator.animecross.item.ODMGearItem;
+import net.mcreator.animecross.item.ODMGearArmorItem;
 import net.mcreator.animecross.item.ODMEquipItem;
 import net.mcreator.animecross.item.FourStarDragonBallItem;
 import net.mcreator.animecross.item.FiveStarDragonBallItem;
@@ -40,4 +42,7 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> SIXTH_STAR_DRAGON_BALL = REGISTRY.register("sixth_star_dragon_ball",
 			() -> new SixthStarDragonBallItem());
 	public static final RegistryObject<Item> SEVENTH_DRAGON_BALL = REGISTRY.register("seventh_dragon_ball", () -> new SeventhDragonBallItem());
+	public static final RegistryObject<Item> SLIME_BOOTS = REGISTRY.register("slime_boots", () -> new SlimeItem.Boots());
+	public static final RegistryObject<Item> ODM_GEAR_ARMOR_LEGGINGS = REGISTRY.register("odm_gear_armor_leggings",
+			() -> new ODMGearArmorItem.Leggings());
 }

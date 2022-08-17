@@ -396,6 +396,57 @@
           }
         ]
       }
+    },
+    {
+      "name": "SlimeBootsTickEvent",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime_boots_tick_event",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Tensura"
+    },
+    {
+      "name": "Slime",
+      "type": "armor",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slime",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": true,
+        "ec": false
+      },
+      "path": "~/Tensura"
+    },
+    {
+      "name": "ODMGearArmor",
+      "type": "armor",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_gear_armor",
+      "metadata": {
+        "eh": false,
+        "el": true,
+        "eb": false,
+        "ec": false
+      },
+      "path": "~/Tensura"
     }
   ],
   "variable_elements": [
@@ -463,21 +514,29 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
+      "item.animecross.slime_boots": "Slime Boots",
       "item.animecross.onelevel": "One level",
+      "item.animecross.odm_gear_armor_boots": "ODM Gear Armor Boots",
       "item.animecross.test_2": "Test 2",
-      "key.animecross.open_info": "Open Info",
+      "item.animecross.odm_gear_armor_leggings": "ODM Gear Armor ",
+      "item.animecross.odm_gear_armor_helmet": "ODM Gear Armor Helmet",
       "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
       "item.animecross.odmstring": "Odmstring",
-      "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
       "itemGroup.tabaot": "AOT",
+      "item.animecross.slime_helmet": "Slime Helmet",
+      "item.animecross.slime_leggings": "Slime Leggings",
+      "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
+      "item.animecross.two_star_dragon_ball": "Two Star Dragon Ball",
+      "item.animecross.slime_chestplate": "Slime Body",
+      "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
+      "key.animecross.open_info": "Open Info",
+      "item.animecross.odm_gear_armor_chestplate": "ODM Gear Armor Body",
+      "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
       "item.animecross.odm_gear": "ODM Gear",
       "item.animecross.odm_equip": "ODM Equip",
       "itemGroup.tabdragon_ball": "Dragon Ball",
       "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
-      "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
       "item.animecross.test": "Test",
-      "item.animecross.two_star_dragon_ball": "Two Star Dragon Ball",
       "item.animecross.aircanister": "Air canister",
       "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball"
     }
@@ -499,6 +558,10 @@
       },
       {
         "name": "Tensura",
+        "children": []
+      },
+      {
+        "name": "One Piece",
         "children": []
       }
     ]
