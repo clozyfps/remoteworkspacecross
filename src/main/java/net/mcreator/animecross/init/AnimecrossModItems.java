@@ -11,9 +11,11 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraft.world.item.Item;
 
 import net.mcreator.animecross.item.TestItem;
+import net.mcreator.animecross.item.EItem;
 import net.mcreator.animecross.AnimecrossMod;
 
 public class AnimecrossModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, AnimecrossMod.MODID);
 	public static final RegistryObject<Item> TEST = REGISTRY.register("test", () -> new TestItem());
+	public static final RegistryObject<Item> E = REGISTRY.register("e", () -> new EItem());
 }

@@ -7,13 +7,22 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "test"
+    },
+    {
+      "name": "E",
+      "type": "tool",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "e"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.animecross.test": "Test"
+      "item.animecross.test": "Test",
+      "item.animecross.e": "E"
     }
   },
   "foldersRoot": {
