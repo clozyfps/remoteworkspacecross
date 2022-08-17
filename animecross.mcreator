@@ -7,6 +7,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "e"
+    },
+    {
+      "name": "Powershow",
+      "type": "overlay",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "powershow"
     }
   ],
   "variable_elements": [
@@ -33,7 +41,8 @@
   "language_map": {
     "en_us": {
       "item.animecross.test_2": "Test 2",
-      "item.animecross.test": "Test"
+      "item.animecross.test": "Test",
+      "item.animecross.e": "E"
     }
   },
   "foldersRoot": {
