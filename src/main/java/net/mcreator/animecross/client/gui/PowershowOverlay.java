@@ -43,12 +43,12 @@ public class PowershowOverlay {
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new AnimecrossModVariables.PlayerVariables())).power) + "",
-						posX + -210, posY + 105, -1);
+						posX + -214, posY + 104, -1);
 				Minecraft.getInstance().font.draw(event.getMatrixStack(), "/", posX + -177, posY + 105, -12829636);
 				Minecraft.getInstance().font.draw(event.getMatrixStack(),
 						"" + (int) ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 								.orElse(new AnimecrossModVariables.PlayerVariables())).max_power) + "",
-						posX + -177, posY + 105, -1);
+						posX + -159, posY + 105, -1);
 			}
 		}
 	}

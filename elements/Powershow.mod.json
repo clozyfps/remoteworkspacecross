@@ -13,8 +13,8 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:power>",
-          "x": 3,
-          "y": 225
+          "x": -1,
+          "y": 224
         }
       },
       {
@@ -39,7 +39,7 @@
             "falpha": 0.0
           },
           "name": "<VAR:integer:max_power>",
-          "x": 36,
+          "x": 54,
           "y": 225
         }
       }

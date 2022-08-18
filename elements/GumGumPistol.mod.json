@@ -3,14 +3,12 @@
   "_type": "rangeditem",
   "definition": {
     "renderType": 0,
-    "texture": "gumgumpistol",
+    "texture": "air103_layer_2",
     "customModelName": "Normal",
-    "name": "Gum Gum Pistol",
-    "specialInfo": [
-      "A iconic move of Luffy."
-    ],
+    "name": "gumgumpistolprojectile",
+    "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:OnePiece"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "ammoItem": {

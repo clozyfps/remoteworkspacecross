@@ -508,6 +508,61 @@
       "locked_code": false,
       "registry_name": "gum_gum_pistol",
       "path": "~/Tensura"
+    },
+    {
+      "name": "Fireimmunity",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireimmunity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GumGumPistolItemRightclicked",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gum_gum_pistol_item_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "GumGumPistolItem",
+      "type": "item",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gum_gum_pistol_item",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "Marine",
+      "type": "livingentity",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marine",
+      "path": "~/One Piece"
     }
   ],
   "variable_elements": [
@@ -576,12 +631,25 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "fireimmunitymastery",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "waterbreathingmastery",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item.animecross.slime_boots": "Slime Boots",
+      "item.animecross.marine_spawn_egg": "Marine Spawn Egg",
       "item.animecross.onelevel": "One level",
       "item.animecross.odm_gear_armor_boots": "ODM Gear Armor Boots",
       "item.animecross.test_2": "Test 2",
@@ -601,14 +669,16 @@
       "key.animecross.open_info": "Open Info",
       "item.animecross.odm_gear_armor_chestplate": "ODM Gear Armor Body",
       "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
+      "entity.animecross.marine": "Marine",
       "item.animecross.odm_gear": "ODM Gear",
       "item.animecross.odm_equip": "ODM Equip",
       "itemGroup.tabdragon_ball": "Dragon Ball",
       "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
       "item.animecross.test": "Test",
+      "item.animecross.gum_gum_pistol_item": "Gum Gum Pistol ",
       "item.animecross.aircanister": "Air canister",
       "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",
-      "item.animecross.gum_gum_pistol": "Gum Gum Pistol"
+      "item.animecross.gum_gum_pistol": "gumgumpistolprojectile"
     }
   },
   "foldersRoot": {
@@ -632,6 +702,10 @@
       },
       {
         "name": "One Piece",
+        "children": []
+      },
+      {
+        "name": "Demon_Slayer",
         "children": []
       }
     ]

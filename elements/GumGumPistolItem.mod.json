@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "gum_gum_fruit",
+    "texture": "gumgumpistol",
     "customModelName": "Normal",
-    "name": "Gum Gum Fruit",
-    "rarity": "EPIC",
+    "name": "Gum Gum Pistol ",
+    "rarity": "RARE",
     "creativeTab": {
       "value": "CUSTOM:OnePiece"
     },
     "stackSize": 1,
     "enchantability": 0,
-    "useDuration": 20,
+    "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -25,24 +25,24 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Eating This Fruit Gives You Stretchy Perks!"
+      "Power Cost: 45 - Launch a powerful stretchy punch."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onFinishUsingItem": {
-      "name": "GumGumFruitPlayerFinishesUsingItem"
+    "onRightClickedInAir": {
+      "name": "GumGumPistolItemRightclicked"
     },
     "hasDispenseBehavior": false,
-    "isFood": true,
-    "nutritionalValue": 6,
+    "isFood": false,
+    "nutritionalValue": 4,
     "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
     "isMeat": false,
-    "isAlwaysEdible": true,
+    "isAlwaysEdible": false,
     "animation": "eat"
   }
 }

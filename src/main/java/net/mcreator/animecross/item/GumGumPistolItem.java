@@ -3,7 +3,6 @@ package net.mcreator.animecross.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -13,29 +12,18 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.Component;
 
-import net.mcreator.animecross.init.AnimecrossModTabs;
 import net.mcreator.animecross.entity.GumGumPistolEntity;
-
-import java.util.List;
 
 public class GumGumPistolItem extends Item {
 	public GumGumPistolItem() {
-		super(new Item.Properties().tab(AnimecrossModTabs.TAB_ONE_PIECE).durability(99999));
+		super(new Item.Properties().tab(null).durability(99999));
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		entity.startUsingItem(hand);
 		return new InteractionResultHolder(InteractionResult.SUCCESS, entity.getItemInHand(hand));
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
-		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A iconic move of Luffy."));
 	}
 
 	@Override

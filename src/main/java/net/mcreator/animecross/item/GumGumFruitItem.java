@@ -12,12 +12,13 @@ import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.animecross.procedures.GumGumFruitPlayerFinishesUsingItemProcedure;
+import net.mcreator.animecross.init.AnimecrossModTabs;
 
 import java.util.List;
 
 public class GumGumFruitItem extends Item {
 	public GumGumFruitItem() {
-		super(new Item.Properties().tab(null).stacksTo(1).rarity(Rarity.EPIC)
+		super(new Item.Properties().tab(AnimecrossModTabs.TAB_ONE_PIECE).stacksTo(1).rarity(Rarity.EPIC)
 				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.3f).alwaysEat()
 
 						.build()));

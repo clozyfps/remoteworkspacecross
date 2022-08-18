@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.animecross.entity.OdmstringEntity;
+import net.mcreator.animecross.entity.MarineEntity;
 import net.mcreator.animecross.entity.GumGumPistolEntity;
 import net.mcreator.animecross.AnimecrossMod;
 
@@ -29,6 +30,11 @@ public class AnimecrossModEntities {
 	public static final RegistryObject<EntityType<GumGumPistolEntity>> GUM_GUM_PISTOL = register("projectile_gum_gum_pistol",
 			EntityType.Builder.<GumGumPistolEntity>of(GumGumPistolEntity::new, MobCategory.MISC).setCustomClientFactory(GumGumPistolEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MarineEntity>> MARINE = register("marine",
+			EntityType.Builder.<MarineEntity>of(MarineEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(MarineEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -37,10 +43,12 @@ public class AnimecrossModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			MarineEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(MARINE.get(), MarineEntity.createAttributes().build());
 	}
 }

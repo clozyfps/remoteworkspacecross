@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "animecross:items/gumgumpistol"
+    "layer0": "animecross:items/air103_layer_2"
   },
   "display": {
     "thirdperson_righthand": {

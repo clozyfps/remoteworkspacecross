@@ -11,11 +11,14 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.animecross.client.renderer.MarineRenderer;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class AnimecrossModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(AnimecrossModEntities.ODMSTRING.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(AnimecrossModEntities.GUM_GUM_PISTOL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossModEntities.MARINE.get(), MarineRenderer::new);
 	}
 }

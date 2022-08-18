@@ -7,6 +7,7 @@ package net.mcreator.animecross.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.item.Item;
 
@@ -21,6 +22,7 @@ import net.mcreator.animecross.item.OdmstringItem;
 import net.mcreator.animecross.item.ODMGearItem;
 import net.mcreator.animecross.item.ODMGearArmorItem;
 import net.mcreator.animecross.item.ODMEquipItem;
+import net.mcreator.animecross.item.GumGumPistolItemItem;
 import net.mcreator.animecross.item.GumGumPistolItem;
 import net.mcreator.animecross.item.GumGumFruitItem;
 import net.mcreator.animecross.item.FourStarDragonBallItem;
@@ -49,4 +51,7 @@ public class AnimecrossModItems {
 			() -> new ODMGearArmorItem.Leggings());
 	public static final RegistryObject<Item> GUM_GUM_FRUIT = REGISTRY.register("gum_gum_fruit", () -> new GumGumFruitItem());
 	public static final RegistryObject<Item> GUM_GUM_PISTOL = REGISTRY.register("gum_gum_pistol", () -> new GumGumPistolItem());
+	public static final RegistryObject<Item> GUM_GUM_PISTOL_ITEM = REGISTRY.register("gum_gum_pistol_item", () -> new GumGumPistolItemItem());
+	public static final RegistryObject<Item> MARINE = REGISTRY.register("marine_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossModEntities.MARINE, -1, -15984852, new Item.Properties().tab(AnimecrossModTabs.TAB_ONE_PIECE)));
 }

@@ -83,6 +83,8 @@ public class AnimecrossModVariables {
 			clone.has7dragonballs = original.has7dragonballs;
 			clone.playerjoinedalready = original.playerjoinedalready;
 			clone.gumgumfruituser = original.gumgumfruituser;
+			clone.fireimmunitymastery = original.fireimmunitymastery;
+			clone.waterbreathingmastery = original.waterbreathingmastery;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -130,6 +132,8 @@ public class AnimecrossModVariables {
 		public boolean has7dragonballs = false;
 		public boolean playerjoinedalready = false;
 		public boolean gumgumfruituser = false;
+		public double fireimmunitymastery = 0;
+		public double waterbreathingmastery = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -149,6 +153,8 @@ public class AnimecrossModVariables {
 			nbt.putBoolean("has7dragonballs", has7dragonballs);
 			nbt.putBoolean("playerjoinedalready", playerjoinedalready);
 			nbt.putBoolean("gumgumfruituser", gumgumfruituser);
+			nbt.putDouble("fireimmunitymastery", fireimmunitymastery);
+			nbt.putDouble("waterbreathingmastery", waterbreathingmastery);
 			return nbt;
 		}
 
@@ -165,6 +171,8 @@ public class AnimecrossModVariables {
 			has7dragonballs = nbt.getBoolean("has7dragonballs");
 			playerjoinedalready = nbt.getBoolean("playerjoinedalready");
 			gumgumfruituser = nbt.getBoolean("gumgumfruituser");
+			fireimmunitymastery = nbt.getDouble("fireimmunitymastery");
+			waterbreathingmastery = nbt.getDouble("waterbreathingmastery");
 		}
 	}
 
@@ -201,6 +209,8 @@ public class AnimecrossModVariables {
 					variables.has7dragonballs = message.data.has7dragonballs;
 					variables.playerjoinedalready = message.data.playerjoinedalready;
 					variables.gumgumfruituser = message.data.gumgumfruituser;
+					variables.fireimmunitymastery = message.data.fireimmunitymastery;
+					variables.waterbreathingmastery = message.data.waterbreathingmastery;
 				}
 			});
 			context.setPacketHandled(true);

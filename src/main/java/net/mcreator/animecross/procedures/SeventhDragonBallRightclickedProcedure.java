@@ -1,6 +1,9 @@
 package net.mcreator.animecross.procedures;
 
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -61,11 +64,35 @@ public class SeventhDragonBallRightclickedProcedure {
 					}, _bpos);
 				}
 			}
-			if (entity instanceof Player _player) {
-				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.SEVENTH_DRAGON_BALL.get());
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
-			}
+			new Object() {
+				private int ticks = 0;
+				private float waitTicks;
+				private LevelAccessor world;
+
+				public void start(LevelAccessor world, int waitTicks) {
+					this.waitTicks = waitTicks;
+					MinecraftForge.EVENT_BUS.register(this);
+					this.world = world;
+				}
+
+				@SubscribeEvent
+				public void tick(TickEvent.ServerTickEvent event) {
+					if (event.phase == TickEvent.Phase.END) {
+						this.ticks += 1;
+						if (this.ticks >= this.waitTicks)
+							run();
+					}
+				}
+
+				private void run() {
+					if (entity instanceof Player _player) {
+						ItemStack _stktoremove = new ItemStack(AnimecrossModItems.SEVENTH_DRAGON_BALL.get());
+						_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
+								_player.inventoryMenu.getCraftSlots());
+					}
+					MinecraftForge.EVENT_BUS.unregister(this);
+				}
+			}.start(world, 20);
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(AnimecrossModItems.SIXTH_STAR_DRAGON_BALL.get());
 				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
