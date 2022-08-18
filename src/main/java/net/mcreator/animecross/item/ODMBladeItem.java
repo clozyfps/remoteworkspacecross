@@ -33,7 +33,7 @@ public class ODMBladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 3f;
 			}
 
 			public int getLevel() {

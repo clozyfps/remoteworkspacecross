@@ -20,6 +20,13 @@ public class GumGumFruitPlayerFinishesUsingItemProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		{
+			boolean _setval = true;
+			entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.DevilFruit = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		if (entity instanceof Player _player) {
 			ItemStack _setstack = new ItemStack(AnimecrossModItems.GUM_GUM_PISTOL_ITEM.get());
 			_setstack.setCount(1);

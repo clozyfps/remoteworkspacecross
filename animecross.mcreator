@@ -906,6 +906,49 @@
         "ec": true
       },
       "path": "~/attack on titan"
+    },
+    {
+      "name": "Waterdevilfruit",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waterdevilfruit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "Give1000staminaCommandExecuted",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_1000stamina_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "Give1000stamina",
+      "type": "command",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_1000stamina",
+      "path": "~/One Piece"
     }
   ],
   "variable_elements": [
@@ -998,6 +1041,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "DevilFruit",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -1016,8 +1065,8 @@
       "block.animecross.tv_bottom_right": "Tv Bottom Right",
       "item.animecross.gum_gum_gatling": "Gum Gum Gatling",
       "item.animecross.gum_gum_fruit": "Gum Gum Fruit",
-      "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
       "itemGroup.tabone_piece": "One Piece",
+      "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
       "block.animecross.tv_top_left": "TV Top Left",
       "item.animecross.scout_regiment_cloak_boots": "Scout Regiment Cloak Boots",
       "block.animecross.tv_bottom": "Tv Bottom",

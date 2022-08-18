@@ -9,9 +9,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectInstance;
 
 import net.mcreator.animecross.network.AnimecrossModVariables;
-import net.mcreator.animecross.entity.OdmstringEntity;
+import net.mcreator.animecross.entity.GatlingrangeditemEntity;
 
 public class GumGumGatlingRightclickedProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
@@ -28,7 +30,7 @@ public class GumGumGatlingRightclickedProcedure {
 				});
 			}
 			if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-				OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+				GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 			}
 			new Object() {
 				private int ticks = 0;
@@ -52,7 +54,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -79,7 +81,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -106,7 +108,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -133,7 +135,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -160,7 +162,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -187,7 +189,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -214,7 +216,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -241,7 +243,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -268,7 +270,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 6, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -295,7 +297,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -322,7 +324,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -349,7 +351,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -376,7 +378,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -403,7 +405,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -430,7 +432,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -457,7 +459,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -484,7 +486,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -511,7 +513,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -538,7 +540,7 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
@@ -565,11 +567,13 @@ public class GumGumGatlingRightclickedProcedure {
 
 				private void run() {
 					if (entity instanceof LivingEntity _ent_sa && !_ent_sa.level.isClientSide()) {
-						OdmstringEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
+						GatlingrangeditemEntity.shoot(_ent_sa.level, _ent_sa, _ent_sa.level.getRandom(), 1, 5, 0);
 					}
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}
 			}.start(world, 20);
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 20, 2, (false), (false)));
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 120);
 		}

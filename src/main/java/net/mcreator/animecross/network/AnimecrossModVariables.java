@@ -87,6 +87,7 @@ public class AnimecrossModVariables {
 			clone.waterbreathingmastery = original.waterbreathingmastery;
 			clone.max_stamina = original.max_stamina;
 			clone.stamina = original.stamina;
+			clone.DevilFruit = original.DevilFruit;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -138,6 +139,7 @@ public class AnimecrossModVariables {
 		public double waterbreathingmastery = 0;
 		public double max_stamina = 0;
 		public double stamina = 0;
+		public boolean DevilFruit = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -161,6 +163,7 @@ public class AnimecrossModVariables {
 			nbt.putDouble("waterbreathingmastery", waterbreathingmastery);
 			nbt.putDouble("max_stamina", max_stamina);
 			nbt.putDouble("stamina", stamina);
+			nbt.putBoolean("DevilFruit", DevilFruit);
 			return nbt;
 		}
 
@@ -181,6 +184,7 @@ public class AnimecrossModVariables {
 			waterbreathingmastery = nbt.getDouble("waterbreathingmastery");
 			max_stamina = nbt.getDouble("max_stamina");
 			stamina = nbt.getDouble("stamina");
+			DevilFruit = nbt.getBoolean("DevilFruit");
 		}
 	}
 
@@ -221,6 +225,7 @@ public class AnimecrossModVariables {
 					variables.waterbreathingmastery = message.data.waterbreathingmastery;
 					variables.max_stamina = message.data.max_stamina;
 					variables.stamina = message.data.stamina;
+					variables.DevilFruit = message.data.DevilFruit;
 				}
 			});
 			context.setPacketHandled(true);

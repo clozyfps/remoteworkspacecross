@@ -25,8 +25,8 @@ public class GumGumRocketRightclickedProcedure {
 			}
 			speed = 5;
 			Yaw = entity.getYRot();
-			entity.setDeltaMovement(new Vec3((speed * Math.cos((Yaw + 120) * (Math.PI / 180))), (entity.getDeltaMovement().y()),
-					(speed * Math.sin((Yaw + 120) * (Math.PI / 180)))));
+			entity.setDeltaMovement(new Vec3((speed * Math.cos((Yaw + 350) * (Math.PI / 180))), (entity.getDeltaMovement().y()),
+					(speed * Math.sin((Yaw + 350) * (Math.PI / 180)))));
 			if (entity instanceof Player _player)
 				_player.getCooldowns().addCooldown(itemstack.getItem(), 100);
 		}
