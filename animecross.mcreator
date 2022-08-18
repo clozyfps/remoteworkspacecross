@@ -949,6 +949,27 @@
       "locked_code": false,
       "registry_name": "give_1000stamina",
       "path": "~/One Piece"
+    },
+    {
+      "name": "Gumgummastery",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gumgummastery",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
     }
   ],
   "variable_elements": [
@@ -1047,6 +1068,18 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "gearseconduser",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "gumgummastery",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -1065,8 +1098,8 @@
       "block.animecross.tv_bottom_right": "Tv Bottom Right",
       "item.animecross.gum_gum_gatling": "Gum Gum Gatling",
       "item.animecross.gum_gum_fruit": "Gum Gum Fruit",
-      "itemGroup.tabone_piece": "One Piece",
       "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
+      "itemGroup.tabone_piece": "One Piece",
       "block.animecross.tv_top_left": "TV Top Left",
       "item.animecross.scout_regiment_cloak_boots": "Scout Regiment Cloak Boots",
       "block.animecross.tv_bottom": "Tv Bottom",

@@ -88,6 +88,8 @@ public class AnimecrossModVariables {
 			clone.max_stamina = original.max_stamina;
 			clone.stamina = original.stamina;
 			clone.DevilFruit = original.DevilFruit;
+			clone.gearseconduser = original.gearseconduser;
+			clone.gumgummastery = original.gumgummastery;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -140,6 +142,8 @@ public class AnimecrossModVariables {
 		public double max_stamina = 0;
 		public double stamina = 0;
 		public boolean DevilFruit = false;
+		public boolean gearseconduser = false;
+		public double gumgummastery = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -164,6 +168,8 @@ public class AnimecrossModVariables {
 			nbt.putDouble("max_stamina", max_stamina);
 			nbt.putDouble("stamina", stamina);
 			nbt.putBoolean("DevilFruit", DevilFruit);
+			nbt.putBoolean("gearseconduser", gearseconduser);
+			nbt.putDouble("gumgummastery", gumgummastery);
 			return nbt;
 		}
 
@@ -185,6 +191,8 @@ public class AnimecrossModVariables {
 			max_stamina = nbt.getDouble("max_stamina");
 			stamina = nbt.getDouble("stamina");
 			DevilFruit = nbt.getBoolean("DevilFruit");
+			gearseconduser = nbt.getBoolean("gearseconduser");
+			gumgummastery = nbt.getDouble("gumgummastery");
 		}
 	}
 
@@ -226,6 +234,8 @@ public class AnimecrossModVariables {
 					variables.max_stamina = message.data.max_stamina;
 					variables.stamina = message.data.stamina;
 					variables.DevilFruit = message.data.DevilFruit;
+					variables.gearseconduser = message.data.gearseconduser;
+					variables.gumgummastery = message.data.gumgummastery;
 				}
 			});
 			context.setPacketHandled(true);
