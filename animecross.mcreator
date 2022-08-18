@@ -563,6 +563,36 @@
       "locked_code": false,
       "registry_name": "marine",
       "path": "~/One Piece"
+    },
+    {
+      "name": "GumGumRocketRightclicked",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gum_gum_rocket_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "GumGumRocket",
+      "type": "item",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gum_gum_rocket",
+      "path": "~/One Piece"
     }
   ],
   "variable_elements": [
@@ -652,8 +682,8 @@
       "item.animecross.marine_spawn_egg": "Marine Spawn Egg",
       "item.animecross.onelevel": "One level",
       "item.animecross.odm_gear_armor_boots": "ODM Gear Armor Boots",
-      "item.animecross.test_2": "Test 2",
       "item.animecross.odm_gear_armor_leggings": "ODM Gear Armor ",
+      "item.animecross.test_2": "Test 2",
       "item.animecross.odm_gear_armor_helmet": "ODM Gear Armor Helmet",
       "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
       "item.animecross.odmstring": "Odmstring",
@@ -666,6 +696,7 @@
       "item.animecross.gum_gum_fruit": "Gum Gum Fruit",
       "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
       "itemGroup.tabone_piece": "One Piece",
+      "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
       "key.animecross.open_info": "Open Info",
       "item.animecross.odm_gear_armor_chestplate": "ODM Gear Armor Body",
       "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
