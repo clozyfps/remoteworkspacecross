@@ -27,6 +27,14 @@ public class PlayerJoinsProcedure {
 			return;
 		{
 			double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new AnimecrossModVariables.PlayerVariables())).max_stamina;
+			entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.stamina = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new AnimecrossModVariables.PlayerVariables())).max_power;
 			entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.power = _setval;
@@ -60,6 +68,20 @@ public class PlayerJoinsProcedure {
 				double _setval = 1;
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.player_joins_first_time = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = 125;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.stamina = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = 125;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.max_stamina = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

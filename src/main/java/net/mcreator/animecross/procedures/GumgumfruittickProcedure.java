@@ -33,7 +33,9 @@ public class GumgumfruittickProcedure {
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).gumgumfruituser == true) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 0, 5, (false), (false)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 0, 2, (false), (false)));
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 0, 2, (false), (false)));
 		}
 	}
 }

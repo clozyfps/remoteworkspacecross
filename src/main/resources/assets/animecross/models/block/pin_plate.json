@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "animecross:blocks/pinplate",
+    "up": "animecross:blocks/pinplate",
+    "north": "animecross:blocks/pinplate",
+    "east": "animecross:blocks/pinplate",
+    "south": "animecross:blocks/pinplate",
+    "west": "animecross:blocks/pinplate",
+    "particle": "animecross:blocks/pinplate"
+  }
+}

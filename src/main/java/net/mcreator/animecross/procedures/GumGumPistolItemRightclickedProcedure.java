@@ -13,12 +13,12 @@ public class GumGumPistolItemRightclickedProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossModVariables.PlayerVariables())).power > 44) {
+				.orElse(new AnimecrossModVariables.PlayerVariables())).stamina > 44) {
 			{
 				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossModVariables.PlayerVariables())).power - 45;
+						.orElse(new AnimecrossModVariables.PlayerVariables())).stamina - 45;
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.power = _setval;
+					capability.stamina = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

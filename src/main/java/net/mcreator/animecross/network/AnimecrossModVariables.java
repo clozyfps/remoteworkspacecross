@@ -85,6 +85,8 @@ public class AnimecrossModVariables {
 			clone.gumgumfruituser = original.gumgumfruituser;
 			clone.fireimmunitymastery = original.fireimmunitymastery;
 			clone.waterbreathingmastery = original.waterbreathingmastery;
+			clone.max_stamina = original.max_stamina;
+			clone.stamina = original.stamina;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -134,6 +136,8 @@ public class AnimecrossModVariables {
 		public boolean gumgumfruituser = false;
 		public double fireimmunitymastery = 0;
 		public double waterbreathingmastery = 0;
+		public double max_stamina = 0;
+		public double stamina = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -155,6 +159,8 @@ public class AnimecrossModVariables {
 			nbt.putBoolean("gumgumfruituser", gumgumfruituser);
 			nbt.putDouble("fireimmunitymastery", fireimmunitymastery);
 			nbt.putDouble("waterbreathingmastery", waterbreathingmastery);
+			nbt.putDouble("max_stamina", max_stamina);
+			nbt.putDouble("stamina", stamina);
 			return nbt;
 		}
 
@@ -173,6 +179,8 @@ public class AnimecrossModVariables {
 			gumgumfruituser = nbt.getBoolean("gumgumfruituser");
 			fireimmunitymastery = nbt.getDouble("fireimmunitymastery");
 			waterbreathingmastery = nbt.getDouble("waterbreathingmastery");
+			max_stamina = nbt.getDouble("max_stamina");
+			stamina = nbt.getDouble("stamina");
 		}
 	}
 
@@ -211,6 +219,8 @@ public class AnimecrossModVariables {
 					variables.gumgumfruituser = message.data.gumgumfruituser;
 					variables.fireimmunitymastery = message.data.fireimmunitymastery;
 					variables.waterbreathingmastery = message.data.waterbreathingmastery;
+					variables.max_stamina = message.data.max_stamina;
+					variables.stamina = message.data.stamina;
 				}
 			});
 			context.setPacketHandled(true);

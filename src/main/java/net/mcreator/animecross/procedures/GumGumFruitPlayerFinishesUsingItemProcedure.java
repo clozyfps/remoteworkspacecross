@@ -25,5 +25,15 @@ public class GumGumFruitPlayerFinishesUsingItemProcedure {
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 		}
+		if (entity instanceof Player _player) {
+			ItemStack _setstack = new ItemStack(AnimecrossModItems.GUM_GUM_ROCKET.get());
+			_setstack.setCount(1);
+			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		}
+		if (entity instanceof Player _player) {
+			ItemStack _setstack = new ItemStack(AnimecrossModItems.GUM_GUM_GATLING.get());
+			_setstack.setCount(1);
+			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		}
 	}
 }

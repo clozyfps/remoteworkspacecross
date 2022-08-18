@@ -36,7 +36,7 @@ public class GumGumRocketItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Power Cost: 75 - Launch yourself foward using your rubber arms."));
+		list.add(new TextComponent("Stamina Cost: 75 - Launch yourself foward using your rubber arms."));
 	}
 
 	@Override

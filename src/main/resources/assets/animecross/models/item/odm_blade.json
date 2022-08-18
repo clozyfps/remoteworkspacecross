@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "animecross:items/attack_on_titan_sword"
+  }
+}

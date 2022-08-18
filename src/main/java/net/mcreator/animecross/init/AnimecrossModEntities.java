@@ -16,9 +16,11 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.animecross.entity.ScoutRegimentMemberEntity;
 import net.mcreator.animecross.entity.OdmstringEntity;
 import net.mcreator.animecross.entity.MarineEntity;
 import net.mcreator.animecross.entity.GumGumPistolEntity;
+import net.mcreator.animecross.entity.GatlingrangeditemEntity;
 import net.mcreator.animecross.AnimecrossMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -35,6 +37,16 @@ public class AnimecrossModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(MarineEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GatlingrangeditemEntity>> GATLINGRANGEDITEM = register("projectile_gatlingrangeditem",
+			EntityType.Builder.<GatlingrangeditemEntity>of(GatlingrangeditemEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(GatlingrangeditemEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ScoutRegimentMemberEntity>> SCOUT_REGIMENT_MEMBER = register("scout_regiment_member",
+			EntityType.Builder.<ScoutRegimentMemberEntity>of(ScoutRegimentMemberEntity::new, MobCategory.AMBIENT)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(ScoutRegimentMemberEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -44,11 +56,13 @@ public class AnimecrossModEntities {
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
 			MarineEntity.init();
+			ScoutRegimentMemberEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MARINE.get(), MarineEntity.createAttributes().build());
+		event.put(SCOUT_REGIMENT_MEMBER.get(), ScoutRegimentMemberEntity.createAttributes().build());
 	}
 }

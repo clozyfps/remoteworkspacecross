@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "animecross:blocks/tv_bottom",
+    "up": "animecross:blocks/tv_bottom",
+    "north": "animecross:blocks/tv_bottom",
+    "east": "animecross:blocks/tv_bottom",
+    "south": "animecross:blocks/tv_bottom",
+    "west": "animecross:blocks/tv_bottom",
+    "particle": "animecross:blocks/tv_bottom"
+  }
+}

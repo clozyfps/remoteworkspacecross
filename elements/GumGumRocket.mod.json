@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Power Cost: 75 - Launch yourself foward using your rubber arms."
+      "Stamina Cost: 75 - Launch yourself foward using your rubber arms."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

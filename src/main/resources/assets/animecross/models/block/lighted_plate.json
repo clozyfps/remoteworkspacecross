@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "animecross:blocks/lightedplate",
+    "up": "animecross:blocks/lightedplate",
+    "north": "animecross:blocks/lightedplate",
+    "east": "animecross:blocks/lightedplate",
+    "south": "animecross:blocks/lightedplate",
+    "west": "animecross:blocks/lightedplate",
+    "particle": "animecross:blocks/lightedplate"
+  }
+}

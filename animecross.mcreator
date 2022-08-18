@@ -593,6 +593,319 @@
       "locked_code": false,
       "registry_name": "gum_gum_rocket",
       "path": "~/One Piece"
+    },
+    {
+      "name": "Give1000powerCommandExecuted",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_1000power_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "Give1000power",
+      "type": "command",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "give_1000power",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "Staminaincrease",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staminaincrease",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GatlingrangeditemProjectileHitsPlayer",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gatlingrangeditem_projectile_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "Gatlingrangeditem",
+      "type": "rangeditem",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gatlingrangeditem",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "GumGumGatlingRightclicked",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gum_gum_gatling_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "GumGumGatling",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gum_gum_gatling",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "LightedPlate",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lighted_plate",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "PinPlate",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pin_plate",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "FloorPlate",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "floor_plate",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TvBottom",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv_bottom",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TvBottomLeft",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv_bottom_left",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TvBottomRight",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv_bottom_right",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TvTop",
+      "type": "block",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv_top",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TVTopLeft",
+      "type": "block",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv_top_left",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TVTopright",
+      "type": "block",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv_topright",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "TvSingle",
+      "type": "block",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tv_single",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "Tvright",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tvright",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "Tvleft",
+      "type": "block",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tvleft",
+      "path": "~/DBZ"
+    },
+    {
+      "name": "ODMBladeEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_blade_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "ODMBlade",
+      "type": "tool",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_blade",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "ODMBladeRightclicked",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "odm_blade_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "ScoutRegimentMember",
+      "type": "livingentity",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scout_regiment_member",
+      "path": "~/attack on titan"
+    },
+    {
+      "name": "ScoutRegimentCloak",
+      "type": "armor",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scout_regiment_cloak",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/attack on titan"
     }
   ],
   "variable_elements": [
@@ -673,43 +986,76 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "max_stamina",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "stamina",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.animecross.tvright": "Tvright",
       "item.animecross.slime_boots": "Slime Boots",
       "item.animecross.marine_spawn_egg": "Marine Spawn Egg",
       "item.animecross.onelevel": "One level",
       "item.animecross.odm_gear_armor_boots": "ODM Gear Armor Boots",
-      "item.animecross.odm_gear_armor_leggings": "ODM Gear Armor ",
-      "item.animecross.test_2": "Test 2",
       "item.animecross.odm_gear_armor_helmet": "ODM Gear Armor Helmet",
       "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
+      "item.animecross.scout_regiment_cloak_helmet": "Scout Regiment Cloak Helmet",
+      "item.animecross.slime_helmet": "Slime Helmet",
+      "block.animecross.lighted_plate": "Lighted Plate",
+      "block.animecross.tv_bottom_right": "Tv Bottom Right",
+      "item.animecross.gum_gum_gatling": "Gum Gum Gatling",
+      "item.animecross.gum_gum_fruit": "Gum Gum Fruit",
+      "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
+      "itemGroup.tabone_piece": "One Piece",
+      "block.animecross.tv_top_left": "TV Top Left",
+      "item.animecross.scout_regiment_cloak_boots": "Scout Regiment Cloak Boots",
+      "block.animecross.tv_bottom": "Tv Bottom",
+      "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
+      "item.animecross.gatlingrangeditem": "Gatlingrangeditem",
+      "entity.animecross.scout_regiment_member": "Scout Regiment Soldier",
+      "block.animecross.floor_plate": "Floor Plate",
+      "item.animecross.odm_equip": "ODM Equip",
+      "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
+      "item.animecross.gum_gum_pistol_item": "Gum Gum Pistol ",
+      "item.animecross.test": "Test",
+      "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",
+      "item.animecross.gum_gum_pistol": "gumgumpistolprojectile",
+      "item.animecross.odm_gear_armor_leggings": "ODM Gear Armor ",
+      "item.animecross.test_2": "Test 2",
       "item.animecross.odmstring": "Odmstring",
       "itemGroup.tabaot": "AOT",
-      "item.animecross.slime_helmet": "Slime Helmet",
       "item.animecross.slime_leggings": "Slime Leggings",
       "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
+      "item.animecross.scout_regiment_member_spawn_egg": "Scout Regiment Soldier Spawn Egg",
       "item.animecross.two_star_dragon_ball": "Two Star Dragon Ball",
       "item.animecross.slime_chestplate": "Slime Body",
-      "item.animecross.gum_gum_fruit": "Gum Gum Fruit",
       "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
-      "itemGroup.tabone_piece": "One Piece",
-      "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
+      "block.animecross.pin_plate": "Pin Plate",
+      "item.animecross.scout_regiment_cloak_chestplate": "Scout Regiment Cloak ",
       "key.animecross.open_info": "Open Info",
       "item.animecross.odm_gear_armor_chestplate": "ODM Gear Armor Body",
-      "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
       "entity.animecross.marine": "Marine",
+      "item.animecross.odm_blade": "ODM Blade",
+      "block.animecross.tv_bottom_left": "Tv Bottom Left",
       "item.animecross.odm_gear": "ODM Gear",
-      "item.animecross.odm_equip": "ODM Equip",
+      "block.animecross.tv_single": "Tv Single",
+      "block.animecross.tv_top": "Tv Top",
       "itemGroup.tabdragon_ball": "Dragon Ball",
-      "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
-      "item.animecross.test": "Test",
-      "item.animecross.gum_gum_pistol_item": "Gum Gum Pistol ",
+      "block.animecross.tv_topright": "TV Topright",
+      "block.animecross.tvleft": "Tvleft",
       "item.animecross.aircanister": "Air canister",
-      "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",
-      "item.animecross.gum_gum_pistol": "gumgumpistolprojectile"
+      "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings"
     }
   },
   "foldersRoot": {

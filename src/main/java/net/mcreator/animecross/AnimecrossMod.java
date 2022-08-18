@@ -29,6 +29,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.mcreator.animecross.init.AnimecrossModTabs;
 import net.mcreator.animecross.init.AnimecrossModItems;
 import net.mcreator.animecross.init.AnimecrossModEntities;
+import net.mcreator.animecross.init.AnimecrossModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -46,7 +47,7 @@ public class AnimecrossMod {
 	public AnimecrossMod() {
 		AnimecrossModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		AnimecrossModBlocks.REGISTRY.register(bus);
 		AnimecrossModItems.REGISTRY.register(bus);
 		AnimecrossModEntities.REGISTRY.register(bus);
 

@@ -9,23 +9,30 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.animecross.item.TwoStarDragonBallItem;
 import net.mcreator.animecross.item.ThreeStarDragonBallItem;
 import net.mcreator.animecross.item.SlimeItem;
 import net.mcreator.animecross.item.SixthStarDragonBallItem;
 import net.mcreator.animecross.item.SeventhDragonBallItem;
+import net.mcreator.animecross.item.ScoutRegimentCloakItem;
 import net.mcreator.animecross.item.OnelevelItem;
 import net.mcreator.animecross.item.OneStarDragonBallItem;
 import net.mcreator.animecross.item.OdmstringItem;
 import net.mcreator.animecross.item.ODMGearItem;
 import net.mcreator.animecross.item.ODMGearArmorItem;
 import net.mcreator.animecross.item.ODMEquipItem;
+import net.mcreator.animecross.item.ODMBladeItem;
 import net.mcreator.animecross.item.GumGumRocketItem;
 import net.mcreator.animecross.item.GumGumPistolItemItem;
 import net.mcreator.animecross.item.GumGumPistolItem;
+import net.mcreator.animecross.item.GumGumGatlingItem;
 import net.mcreator.animecross.item.GumGumFruitItem;
+import net.mcreator.animecross.item.GatlingrangeditemItem;
 import net.mcreator.animecross.item.FourStarDragonBallItem;
 import net.mcreator.animecross.item.FiveStarDragonBallItem;
 import net.mcreator.animecross.item.AircanisterItem;
@@ -56,4 +63,28 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> MARINE = REGISTRY.register("marine_spawn_egg",
 			() -> new ForgeSpawnEggItem(AnimecrossModEntities.MARINE, -1, -15984852, new Item.Properties().tab(AnimecrossModTabs.TAB_ONE_PIECE)));
 	public static final RegistryObject<Item> GUM_GUM_ROCKET = REGISTRY.register("gum_gum_rocket", () -> new GumGumRocketItem());
+	public static final RegistryObject<Item> GATLINGRANGEDITEM = REGISTRY.register("gatlingrangeditem", () -> new GatlingrangeditemItem());
+	public static final RegistryObject<Item> GUM_GUM_GATLING = REGISTRY.register("gum_gum_gatling", () -> new GumGumGatlingItem());
+	public static final RegistryObject<Item> LIGHTED_PLATE = block(AnimecrossModBlocks.LIGHTED_PLATE, null);
+	public static final RegistryObject<Item> PIN_PLATE = block(AnimecrossModBlocks.PIN_PLATE, null);
+	public static final RegistryObject<Item> FLOOR_PLATE = block(AnimecrossModBlocks.FLOOR_PLATE, null);
+	public static final RegistryObject<Item> TV_BOTTOM = block(AnimecrossModBlocks.TV_BOTTOM, AnimecrossModTabs.TAB_AOT);
+	public static final RegistryObject<Item> TV_BOTTOM_LEFT = block(AnimecrossModBlocks.TV_BOTTOM_LEFT, null);
+	public static final RegistryObject<Item> TV_BOTTOM_RIGHT = block(AnimecrossModBlocks.TV_BOTTOM_RIGHT, null);
+	public static final RegistryObject<Item> TV_TOP = block(AnimecrossModBlocks.TV_TOP, null);
+	public static final RegistryObject<Item> TV_TOP_LEFT = block(AnimecrossModBlocks.TV_TOP_LEFT, null);
+	public static final RegistryObject<Item> TV_TOPRIGHT = block(AnimecrossModBlocks.TV_TOPRIGHT, null);
+	public static final RegistryObject<Item> TV_SINGLE = block(AnimecrossModBlocks.TV_SINGLE, null);
+	public static final RegistryObject<Item> TVRIGHT = block(AnimecrossModBlocks.TVRIGHT, null);
+	public static final RegistryObject<Item> TVLEFT = block(AnimecrossModBlocks.TVLEFT, null);
+	public static final RegistryObject<Item> ODM_BLADE = REGISTRY.register("odm_blade", () -> new ODMBladeItem());
+	public static final RegistryObject<Item> SCOUT_REGIMENT_MEMBER = REGISTRY.register("scout_regiment_member_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossModEntities.SCOUT_REGIMENT_MEMBER, -3569353, -16167154,
+					new Item.Properties().tab(AnimecrossModTabs.TAB_AOT)));
+	public static final RegistryObject<Item> SCOUT_REGIMENT_CLOAK_CHESTPLATE = REGISTRY.register("scout_regiment_cloak_chestplate",
+			() -> new ScoutRegimentCloakItem.Chestplate());
+
+	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
+	}
 }

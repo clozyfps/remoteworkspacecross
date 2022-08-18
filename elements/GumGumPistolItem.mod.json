@@ -25,7 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Power Cost: 45 - Launch a powerful stretchy punch."
+      "Stamina Cost: 45 - Launch a powerful stretchy punch."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

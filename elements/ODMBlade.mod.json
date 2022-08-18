@@ -1,0 +1,35 @@
+{
+  "_fv": 28,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "attack_on_titan_sword",
+    "customModelName": "Normal",
+    "name": "ODM Blade",
+    "specialInfo": [
+      "Blades for the ODM Gear."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:AOT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 6.0,
+    "usageCount": 1561,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ODMBladeRightclicked"
+    },
+    "onEntitySwing": {
+      "name": "ODMBladeEntitySwingsItem"
+    }
+  }
+}
