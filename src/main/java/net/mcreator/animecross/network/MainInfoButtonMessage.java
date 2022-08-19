@@ -12,6 +12,7 @@ import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.animecross.world.inventory.MainInfoMenu;
+import net.mcreator.animecross.procedures.OpenmasteryProcedure;
 import net.mcreator.animecross.procedures.BuyhealthProcedure;
 import net.mcreator.animecross.AnimecrossMod;
 
@@ -65,6 +66,10 @@ public class MainInfoButtonMessage {
 		if (buttonID == 0) {
 
 			BuyhealthProcedure.execute(entity);
+		}
+		if (buttonID == 1) {
+
+			OpenmasteryProcedure.execute(world, x, y, z, entity);
 		}
 	}
 

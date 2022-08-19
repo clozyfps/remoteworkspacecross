@@ -53,7 +53,7 @@ public class ClassguiScreen extends AbstractContainerScreen<ClassguiMenu> {
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("animecross:textures/tablet.png"));
-		this.blit(ms, this.leftPos + -159, this.topPos + -50, 0, 0, 640, 640, 640, 640);
+		this.blit(ms, this.leftPos + -160, this.topPos + -50, 0, 0, 640, 640, 640, 640);
 
 		RenderSystem.disableBlend();
 	}
@@ -105,6 +105,8 @@ public class ClassguiScreen extends AbstractContainerScreen<ClassguiMenu> {
 		this.addRenderableWidget(new Button(this.leftPos + 48, this.topPos + 103, 56, 20, new TextComponent("Saiyan"), e -> {
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + -116, this.topPos + 102, 61, 20, new TextComponent("Shinobi"), e -> {
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 50, this.topPos + 127, 51, 20, new TextComponent("Esper"), e -> {
 		}));
 	}
 }

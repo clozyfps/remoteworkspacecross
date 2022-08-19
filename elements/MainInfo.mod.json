@@ -165,6 +165,9 @@
         "type": "button",
         "data": {
           "text": "Mastery",
+          "onClick": {
+            "name": "Openmastery"
+          },
           "width": 61,
           "height": 20,
           "name": "Mastery",

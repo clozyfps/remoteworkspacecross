@@ -108,6 +108,10 @@ public class MainInfoScreen extends AbstractContainerScreen<MainInfoMenu> {
 			}
 		}));
 		this.addRenderableWidget(new Button(this.leftPos + 160, this.topPos + 150, 61, 20, new TextComponent("Mastery"), e -> {
+			if (true) {
+				AnimecrossMod.PACKET_HANDLER.sendToServer(new MainInfoButtonMessage(1, x, y, z));
+				MainInfoButtonMessage.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 	}
 }

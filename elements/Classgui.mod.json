@@ -16,7 +16,7 @@
           "image": "tablet.png",
           "use1Xscale": false,
           "name": "tablet.png",
-          "x": 54,
+          "x": 53,
           "y": -13
         }
       },
@@ -158,6 +158,17 @@
           "name": "Shinobi",
           "x": 97,
           "y": 139
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Esper",
+          "width": 51,
+          "height": 20,
+          "name": "Esper",
+          "x": 264,
+          "y": 164
         }
       }
     ],

@@ -1,0 +1,84 @@
+{
+  "_fv": 28,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "tablet.png",
+          "use1Xscale": false,
+          "name": "tablet.png",
+          "x": 53,
+          "y": -18
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Gum Gum Mastery",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Gum Gum Mastery",
+          "x": 83,
+          "y": 10
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:gumgummastery>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:gumgummastery>",
+          "x": 164,
+          "y": 10
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:fireimmunitymastery>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:fireimmunitymastery>",
+          "x": 195,
+          "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fire Immunity Mastery",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Fire Immunity Mastery",
+          "x": 83,
+          "y": 23
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -20,7 +20,6 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.animecross.init.AnimecrossModTabs;
 import net.mcreator.animecross.client.model.Modelodm;
 
 import java.util.Map;
@@ -73,7 +72,7 @@ public abstract class ODMGearArmorItem extends ArmorItem {
 
 	public static class Leggings extends ODMGearArmorItem {
 		public Leggings() {
-			super(EquipmentSlot.LEGS, new Item.Properties().tab(AnimecrossModTabs.TAB_AOT));
+			super(EquipmentSlot.LEGS, new Item.Properties().tab(null));
 		}
 
 		public void initializeClient(java.util.function.Consumer<net.minecraftforge.client.IItemRenderProperties> consumer) {
