@@ -21,6 +21,7 @@ import net.mcreator.animecross.entity.ScoutRegimentMemberEntity;
 import net.mcreator.animecross.entity.PyrobombEntity;
 import net.mcreator.animecross.entity.OdmstringEntity;
 import net.mcreator.animecross.entity.MarineEntity;
+import net.mcreator.animecross.entity.LowRankEvilSpiritEntity;
 import net.mcreator.animecross.entity.GumGumPistolEntity;
 import net.mcreator.animecross.entity.GatlingrangeditemEntity;
 import net.mcreator.animecross.entity.FireballprojectileEntity;
@@ -62,6 +63,11 @@ public class AnimecrossModEntities {
 	public static final RegistryObject<EntityType<PyrobombEntity>> PYROBOMB = register("projectile_pyrobomb",
 			EntityType.Builder.<PyrobombEntity>of(PyrobombEntity::new, MobCategory.MISC).setCustomClientFactory(PyrobombEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LowRankEvilSpiritEntity>> LOW_RANK_EVIL_SPIRIT = register("low_rank_evil_spirit",
+			EntityType.Builder.<LowRankEvilSpiritEntity>of(LowRankEvilSpiritEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LowRankEvilSpiritEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -73,6 +79,7 @@ public class AnimecrossModEntities {
 			MarineEntity.init();
 			ScoutRegimentMemberEntity.init();
 			ShigeoEntity.init();
+			LowRankEvilSpiritEntity.init();
 		});
 	}
 
@@ -81,5 +88,6 @@ public class AnimecrossModEntities {
 		event.put(MARINE.get(), MarineEntity.createAttributes().build());
 		event.put(SCOUT_REGIMENT_MEMBER.get(), ScoutRegimentMemberEntity.createAttributes().build());
 		event.put(SHIGEO.get(), ShigeoEntity.createAttributes().build());
+		event.put(LOW_RANK_EVIL_SPIRIT.get(), LowRankEvilSpiritEntity.createAttributes().build());
 	}
 }

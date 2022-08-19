@@ -103,6 +103,9 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> PYRO_BOMB_ITEM = REGISTRY.register("pyro_bomb_item", () -> new PyroBombItemItem());
 	public static final RegistryObject<Item> FIRE_EXPLOSION = REGISTRY.register("fire_explosion", () -> new FireExplosionItem());
 	public static final RegistryObject<Item> AIR_WHIP = REGISTRY.register("air_whip", () -> new AirWhipItem());
+	public static final RegistryObject<Item> LOW_RANK_EVIL_SPIRIT = REGISTRY.register("low_rank_evil_spirit_spawn_egg",
+			() -> new ForgeSpawnEggItem(AnimecrossModEntities.LOW_RANK_EVIL_SPIRIT, -1, -6095,
+					new Item.Properties().tab(AnimecrossModTabs.TAB_MOB_PSYCHO)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

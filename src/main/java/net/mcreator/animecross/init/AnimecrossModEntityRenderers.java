@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.animecross.client.renderer.ShigeoRenderer;
 import net.mcreator.animecross.client.renderer.ScoutRegimentMemberRenderer;
 import net.mcreator.animecross.client.renderer.MarineRenderer;
+import net.mcreator.animecross.client.renderer.LowRankEvilSpiritRenderer;
 import net.mcreator.animecross.client.renderer.GatlingrangeditemRenderer;
 import net.mcreator.animecross.client.renderer.FireballprojectileRenderer;
 
@@ -29,5 +30,6 @@ public class AnimecrossModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossModEntities.FIREBALLPROJECTILE.get(), FireballprojectileRenderer::new);
 		event.registerEntityRenderer(AnimecrossModEntities.SHIGEO.get(), ShigeoRenderer::new);
 		event.registerEntityRenderer(AnimecrossModEntities.PYROBOMB.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(AnimecrossModEntities.LOW_RANK_EVIL_SPIRIT.get(), LowRankEvilSpiritRenderer::new);
 	}
 }

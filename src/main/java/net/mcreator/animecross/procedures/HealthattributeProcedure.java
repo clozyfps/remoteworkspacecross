@@ -33,7 +33,7 @@ public class HealthattributeProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"attribute @s minecraft:generic.max_health base set 4");
+							"attribute @s minecraft:generic.max_health base set 24");
 			}
 		}
 		if (((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -42,7 +42,7 @@ public class HealthattributeProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"attribute @s minecraft:generic.max_health base set 8");
+							"attribute @s minecraft:generic.max_health base set 28");
 			}
 		}
 		if (((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -51,7 +51,7 @@ public class HealthattributeProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"attribute @s minecraft:generic.max_health base set 12");
+							"attribute @s minecraft:generic.max_health base set 32");
 			}
 		}
 		if (((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -60,7 +60,7 @@ public class HealthattributeProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"attribute @s minecraft:generic.max_health base set 16");
+							"attribute @s minecraft:generic.max_health base set 36");
 			}
 		}
 		if (((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -69,7 +69,7 @@ public class HealthattributeProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"attribute @s minecraft:generic.max_health base set 20");
+							"attribute @s minecraft:generic.max_health base set 40");
 			}
 		}
 		if (((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)

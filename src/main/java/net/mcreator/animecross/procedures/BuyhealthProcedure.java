@@ -8,6 +8,14 @@ public class BuyhealthProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
+		{
+			double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+			entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.Healthstat = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
 				&& (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)

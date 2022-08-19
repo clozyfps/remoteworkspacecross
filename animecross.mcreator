@@ -1652,6 +1652,49 @@
       "locked_code": false,
       "registry_name": "air_whip",
       "path": "~/Mob Psycho"
+    },
+    {
+      "name": "LowRankEvilSpiritOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_rank_evil_spirit_on_initial_entity_spawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "LowRankEvilSpiritEntityIsHurt",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_rank_evil_spirit_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "LowRankEvilSpirit",
+      "type": "livingentity",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "low_rank_evil_spirit",
+      "path": "~/Mob Psycho"
     }
   ],
   "variable_elements": [
@@ -1834,6 +1877,7 @@
       "item.animecross.air_whip": "Air Whip",
       "item.animecross.odm_gear_armor_boots": "ODM Gear Armor Boots",
       "item.animecross.odm_gear_armor_helmet": "ODM Gear Armor Helmet",
+      "entity.animecross.low_rank_evil_spirit": "Low Rank Evil Spirit",
       "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
       "item.animecross.scout_regiment_cloak_helmet": "Scout Regiment Cloak Helmet",
       "item.animecross.slime_helmet": "Slime Helmet",
@@ -1853,6 +1897,7 @@
       "block.animecross.floor_plate": "Floor Plate",
       "item.animecross.odm_equip": "ODM Equip",
       "effect.animecross.evil_spirit": "Evil Spirit",
+      "item.animecross.low_rank_evil_spirit_spawn_egg": "Low Rank Evil Spirit Spawn Egg",
       "item.animecross.fire_ball_jutsu": "Fire Ball Jutsu",
       "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
       "item.animecross.gear_second": "Gear Second",
