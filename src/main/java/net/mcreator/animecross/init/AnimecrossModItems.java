@@ -14,6 +14,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.animecross.item.UchihaClanItem;
 import net.mcreator.animecross.item.TwoStarDragonBallItem;
 import net.mcreator.animecross.item.ThreeStarDragonBallItem;
 import net.mcreator.animecross.item.SoulItem;
@@ -69,7 +70,7 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> LIGHTED_PLATE = block(AnimecrossModBlocks.LIGHTED_PLATE, null);
 	public static final RegistryObject<Item> PIN_PLATE = block(AnimecrossModBlocks.PIN_PLATE, null);
 	public static final RegistryObject<Item> FLOOR_PLATE = block(AnimecrossModBlocks.FLOOR_PLATE, null);
-	public static final RegistryObject<Item> TV_BOTTOM = block(AnimecrossModBlocks.TV_BOTTOM, AnimecrossModTabs.TAB_AOT);
+	public static final RegistryObject<Item> TV_BOTTOM = block(AnimecrossModBlocks.TV_BOTTOM, null);
 	public static final RegistryObject<Item> TV_BOTTOM_LEFT = block(AnimecrossModBlocks.TV_BOTTOM_LEFT, null);
 	public static final RegistryObject<Item> TV_BOTTOM_RIGHT = block(AnimecrossModBlocks.TV_BOTTOM_RIGHT, null);
 	public static final RegistryObject<Item> TV_TOP = block(AnimecrossModBlocks.TV_TOP, null);
@@ -85,6 +86,7 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> SCOUT_REGIMENT_CLOAK_CHESTPLATE = REGISTRY.register("scout_regiment_cloak_chestplate",
 			() -> new ScoutRegimentCloakItem.Chestplate());
 	public static final RegistryObject<Item> SOUL = REGISTRY.register("soul", () -> new SoulItem());
+	public static final RegistryObject<Item> UCHIHA_CLAN = REGISTRY.register("uchiha_clan", () -> new UchihaClanItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
