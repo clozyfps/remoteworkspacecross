@@ -90,6 +90,13 @@ public class AnimecrossModVariables {
 			clone.DevilFruit = original.DevilFruit;
 			clone.gearseconduser = original.gearseconduser;
 			clone.gumgummastery = original.gumgummastery;
+			clone.Max_Strength = original.Max_Strength;
+			clone.Max_Health = original.Max_Health;
+			clone.Health = original.Health;
+			clone.Stat_Points = original.Stat_Points;
+			clone.Healthstat = original.Healthstat;
+			clone.evilspirit = original.evilspirit;
+			clone.evilspiritpowerlevel = original.evilspiritpowerlevel;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -144,6 +151,13 @@ public class AnimecrossModVariables {
 		public boolean DevilFruit = false;
 		public boolean gearseconduser = false;
 		public double gumgummastery = 0;
+		public String Max_Strength = "";
+		public String Max_Health = "";
+		public String Health = "\"\"";
+		public double Stat_Points = 0;
+		public double Healthstat = 0;
+		public boolean evilspirit = false;
+		public double evilspiritpowerlevel = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -170,6 +184,13 @@ public class AnimecrossModVariables {
 			nbt.putBoolean("DevilFruit", DevilFruit);
 			nbt.putBoolean("gearseconduser", gearseconduser);
 			nbt.putDouble("gumgummastery", gumgummastery);
+			nbt.putString("Max_Strength", Max_Strength);
+			nbt.putString("Max_Health", Max_Health);
+			nbt.putString("Health", Health);
+			nbt.putDouble("Stat_Points", Stat_Points);
+			nbt.putDouble("Healthstat", Healthstat);
+			nbt.putBoolean("evilspirit", evilspirit);
+			nbt.putDouble("evilspiritpowerlevel", evilspiritpowerlevel);
 			return nbt;
 		}
 
@@ -193,6 +214,13 @@ public class AnimecrossModVariables {
 			DevilFruit = nbt.getBoolean("DevilFruit");
 			gearseconduser = nbt.getBoolean("gearseconduser");
 			gumgummastery = nbt.getDouble("gumgummastery");
+			Max_Strength = nbt.getString("Max_Strength");
+			Max_Health = nbt.getString("Max_Health");
+			Health = nbt.getString("Health");
+			Stat_Points = nbt.getDouble("Stat_Points");
+			Healthstat = nbt.getDouble("Healthstat");
+			evilspirit = nbt.getBoolean("evilspirit");
+			evilspiritpowerlevel = nbt.getDouble("evilspiritpowerlevel");
 		}
 	}
 
@@ -236,6 +264,13 @@ public class AnimecrossModVariables {
 					variables.DevilFruit = message.data.DevilFruit;
 					variables.gearseconduser = message.data.gearseconduser;
 					variables.gumgummastery = message.data.gumgummastery;
+					variables.Max_Strength = message.data.Max_Strength;
+					variables.Max_Health = message.data.Max_Health;
+					variables.Health = message.data.Health;
+					variables.Stat_Points = message.data.Stat_Points;
+					variables.Healthstat = message.data.Healthstat;
+					variables.evilspirit = message.data.evilspirit;
+					variables.evilspiritpowerlevel = message.data.evilspiritpowerlevel;
 				}
 			});
 			context.setPacketHandled(true);

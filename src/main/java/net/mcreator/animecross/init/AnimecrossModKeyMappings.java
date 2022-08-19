@@ -17,15 +17,19 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import net.mcreator.animecross.network.OpenInfoMessage;
+import net.mcreator.animecross.network.DisplaySelfEvilSpiritMessage;
 import net.mcreator.animecross.AnimecrossMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class AnimecrossModKeyMappings {
 	public static final KeyMapping OPEN_INFO = new KeyMapping("key.animecross.open_info", GLFW.GLFW_KEY_I, "key.categories.misc");
+	public static final KeyMapping DISPLAY_SELF_EVIL_SPIRIT = new KeyMapping("key.animecross.display_self_evil_spirit", GLFW.GLFW_KEY_T,
+			"key.categories.misc");
 
 	@SubscribeEvent
 	public static void registerKeyBindings(FMLClientSetupEvent event) {
 		ClientRegistry.registerKeyBinding(OPEN_INFO);
+		ClientRegistry.registerKeyBinding(DISPLAY_SELF_EVIL_SPIRIT);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -37,6 +41,12 @@ public class AnimecrossModKeyMappings {
 					if (event.getAction() == GLFW.GLFW_PRESS) {
 						AnimecrossMod.PACKET_HANDLER.sendToServer(new OpenInfoMessage(0, 0));
 						OpenInfoMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == DISPLAY_SELF_EVIL_SPIRIT.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						AnimecrossMod.PACKET_HANDLER.sendToServer(new DisplaySelfEvilSpiritMessage(0, 0));
+						DisplaySelfEvilSpiritMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 					}
 				}
 			}

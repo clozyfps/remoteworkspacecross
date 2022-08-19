@@ -47,7 +47,7 @@ public class ODMGearItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		ODMGearRightclickedProcedure.execute(entity);
+		ODMGearRightclickedProcedure.execute(entity, itemstack);
 		return ar;
 	}
 }

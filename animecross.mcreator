@@ -196,6 +196,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -970,6 +974,228 @@
         ]
       },
       "path": "~/One Piece"
+    },
+    {
+      "name": "Healthattribute",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healthattribute",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Buyhealth",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buyhealth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GivespCommandExecuted",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givesp_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Givesp",
+      "type": "command",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "givesp"
+    },
+    {
+      "name": "EvilSpiritEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_spirit_effect_startedapplied",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "EvilSpirit",
+      "type": "potioneffect",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "evil_spirit",
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "Spiritrespawn",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spiritrespawn",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "DisplaySelfEvilSpiritOnKeyPressed",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_self_evil_spirit_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "DisplaySelfEvilSpirit",
+      "type": "keybind",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_self_evil_spirit",
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "Punchasevilspirit",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "punchasevilspirit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "SoulPlayerFinishesUsingItem",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "Soul",
+      "type": "item",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul",
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "Respawnasaspirit",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "respawnasaspirit",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "Souldrop",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "souldrop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
     }
   ],
   "variable_elements": [
@@ -1080,6 +1306,48 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "Max_Strength",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Max_Health",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "Health",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Stat_Points",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "Healthstat",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "evilspirit",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "evilspiritpowerlevel",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -1108,6 +1376,7 @@
       "entity.animecross.scout_regiment_member": "Scout Regiment Soldier",
       "block.animecross.floor_plate": "Floor Plate",
       "item.animecross.odm_equip": "ODM Equip",
+      "effect.animecross.evil_spirit": "Evil Spirit",
       "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
       "item.animecross.gum_gum_pistol_item": "Gum Gum Pistol ",
       "item.animecross.test": "Test",
@@ -1120,6 +1389,7 @@
       "item.animecross.slime_leggings": "Slime Leggings",
       "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
       "item.animecross.scout_regiment_member_spawn_egg": "Scout Regiment Soldier Spawn Egg",
+      "item.animecross.soul": "Soul",
       "item.animecross.two_star_dragon_ball": "Two Star Dragon Ball",
       "item.animecross.slime_chestplate": "Slime Body",
       "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
@@ -1137,6 +1407,7 @@
       "block.animecross.tv_topright": "TV Topright",
       "block.animecross.tvleft": "Tvleft",
       "item.animecross.aircanister": "Air canister",
+      "key.animecross.display_self_evil_spirit": "Show Yourself as a evil spirit",
       "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings"
     }
   },
@@ -1164,7 +1435,11 @@
         "children": []
       },
       {
-        "name": "Demon_Slayer",
+        "name": "Demon Slayer",
+        "children": []
+      },
+      {
+        "name": "Mob Psycho",
         "children": []
       }
     ]

@@ -1,0 +1,12 @@
+{
+  "_fv": 28,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "T",
+    "keyBindingName": "Show Yourself as a evil spirit",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "DisplaySelfEvilSpiritOnKeyPressed"
+    }
+  }
+}

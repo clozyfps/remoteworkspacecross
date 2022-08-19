@@ -16,6 +16,7 @@ import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.animecross.item.TwoStarDragonBallItem;
 import net.mcreator.animecross.item.ThreeStarDragonBallItem;
+import net.mcreator.animecross.item.SoulItem;
 import net.mcreator.animecross.item.SlimeItem;
 import net.mcreator.animecross.item.SixthStarDragonBallItem;
 import net.mcreator.animecross.item.SeventhDragonBallItem;
@@ -83,6 +84,7 @@ public class AnimecrossModItems {
 					new Item.Properties().tab(AnimecrossModTabs.TAB_AOT)));
 	public static final RegistryObject<Item> SCOUT_REGIMENT_CLOAK_CHESTPLATE = REGISTRY.register("scout_regiment_cloak_chestplate",
 			() -> new ScoutRegimentCloakItem.Chestplate());
+	public static final RegistryObject<Item> SOUL = REGISTRY.register("soul", () -> new SoulItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

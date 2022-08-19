@@ -16,7 +16,7 @@
           "image": "tablet.png",
           "use1Xscale": false,
           "name": "tablet.png",
-          "x": 55,
+          "x": 54,
           "y": -18
         }
       },
@@ -119,6 +119,57 @@
           "name": "<VAR:user_name>",
           "x": 127,
           "y": 181
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Health",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Health",
+          "x": 293,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "onClick": {
+            "name": "Buyhealth"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 366,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:Healthstat>",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:Healthstat>",
+          "x": 328,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mastery",
+          "width": 61,
+          "height": 20,
+          "name": "Mastery",
+          "x": 286,
+          "y": 187
         }
       }
     ],

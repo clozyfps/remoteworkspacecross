@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.animecross.init.AnimecrossModTabs;
+import net.mcreator.animecross.init.AnimecrossModMobEffects;
 import net.mcreator.animecross.init.AnimecrossModItems;
 import net.mcreator.animecross.init.AnimecrossModEntities;
 import net.mcreator.animecross.init.AnimecrossModBlocks;
@@ -50,6 +51,8 @@ public class AnimecrossMod {
 		AnimecrossModBlocks.REGISTRY.register(bus);
 		AnimecrossModItems.REGISTRY.register(bus);
 		AnimecrossModEntities.REGISTRY.register(bus);
+
+		AnimecrossModMobEffects.REGISTRY.register(bus);
 
 	}
 

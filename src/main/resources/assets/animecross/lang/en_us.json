@@ -22,6 +22,7 @@
   "entity.animecross.scout_regiment_member": "Scout Regiment Soldier",
   "block.animecross.floor_plate": "Floor Plate",
   "item.animecross.odm_equip": "ODM Equip",
+  "effect.animecross.evil_spirit": "Evil Spirit",
   "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
   "item.animecross.gum_gum_pistol_item": "Gum Gum Pistol ",
   "item.animecross.test": "Test",
@@ -34,6 +35,7 @@
   "item.animecross.slime_leggings": "Slime Leggings",
   "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
   "item.animecross.scout_regiment_member_spawn_egg": "Scout Regiment Soldier Spawn Egg",
+  "item.animecross.soul": "Soul",
   "item.animecross.two_star_dragon_ball": "Two Star Dragon Ball",
   "item.animecross.slime_chestplate": "Slime Body",
   "item.animecross.seventh_dragon_ball": "Seventh Dragon Ball",
@@ -51,5 +53,6 @@
   "block.animecross.tv_topright": "TV Topright",
   "block.animecross.tvleft": "Tvleft",
   "item.animecross.aircanister": "Air canister",
+  "key.animecross.display_self_evil_spirit": "Show Yourself as a evil spirit",
   "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings"
 }

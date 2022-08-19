@@ -5,12 +5,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.animecross.world.inventory.MainInfoMenu;
+import net.mcreator.animecross.network.MainInfoButtonMessage;
 import net.mcreator.animecross.network.AnimecrossModVariables;
+import net.mcreator.animecross.AnimecrossMod;
 
 import java.util.HashMap;
 
@@ -48,7 +52,7 @@ public class MainInfoScreen extends AbstractContainerScreen<MainInfoMenu> {
 		RenderSystem.defaultBlendFunc();
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("animecross:textures/tablet.png"));
-		this.blit(ms, this.leftPos + -70, this.topPos + -55, 0, 0, 640, 640, 640, 640);
+		this.blit(ms, this.leftPos + -71, this.topPos + -55, 0, 0, 640, 640, 640, 640);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("animecross:textures/62646a56e09d74b8a876aebf03a71304.png"));
 		this.blit(ms, this.leftPos + -31, this.topPos + -29, 0, 0, 266, 65, 266, 65);
@@ -82,6 +86,9 @@ public class MainInfoScreen extends AbstractContainerScreen<MainInfoMenu> {
 		this.font.draw(poseStack, "User:", -26, 144, -16777216);
 		this.font.draw(poseStack, "" + ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).user_name) + "", 1, 144, -1);
+		this.font.draw(poseStack, "Health", 167, 25, -16777216);
+		this.font.draw(poseStack, "" + (int) ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat) + "", 202, 25, -16777216);
 	}
 
 	@Override
@@ -94,5 +101,13 @@ public class MainInfoScreen extends AbstractContainerScreen<MainInfoMenu> {
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
+		this.addRenderableWidget(new Button(this.leftPos + 240, this.topPos + 21, 30, 20, new TextComponent("+"), e -> {
+			if (true) {
+				AnimecrossMod.PACKET_HANDLER.sendToServer(new MainInfoButtonMessage(0, x, y, z));
+				MainInfoButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 160, this.topPos + 150, 61, 20, new TextComponent("Mastery"), e -> {
+		}));
 	}
 }
