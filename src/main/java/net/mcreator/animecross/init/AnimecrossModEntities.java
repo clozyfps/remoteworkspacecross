@@ -21,6 +21,7 @@ import net.mcreator.animecross.entity.OdmstringEntity;
 import net.mcreator.animecross.entity.MarineEntity;
 import net.mcreator.animecross.entity.GumGumPistolEntity;
 import net.mcreator.animecross.entity.GatlingrangeditemEntity;
+import net.mcreator.animecross.entity.FireballprojectileEntity;
 import net.mcreator.animecross.AnimecrossMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -47,6 +48,10 @@ public class AnimecrossModEntities {
 					.setCustomClientFactory(ScoutRegimentMemberEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<FireballprojectileEntity>> FIREBALLPROJECTILE = register("projectile_fireballprojectile",
+			EntityType.Builder.<FireballprojectileEntity>of(FireballprojectileEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(FireballprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
