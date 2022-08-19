@@ -196,10 +196,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
           }
         ]
       },
@@ -1366,8 +1362,8 @@
       "block.animecross.tv_bottom_right": "Tv Bottom Right",
       "item.animecross.gum_gum_gatling": "Gum Gum Gatling",
       "item.animecross.gum_gum_fruit": "Gum Gum Fruit",
-      "itemGroup.tabone_piece": "One Piece",
       "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
+      "itemGroup.tabone_piece": "One Piece",
       "block.animecross.tv_top_left": "TV Top Left",
       "item.animecross.scout_regiment_cloak_boots": "Scout Regiment Cloak Boots",
       "block.animecross.tv_bottom": "Tv Bottom",
