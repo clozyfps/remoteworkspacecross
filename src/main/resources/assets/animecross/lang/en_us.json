@@ -48,11 +48,13 @@
   "block.animecross.tv_bottom_left": "Tv Bottom Left",
   "item.animecross.odm_gear": "ODM Gear",
   "block.animecross.tv_single": "Tv Single",
+  "itemGroup.tabnaruto": "Naruto",
   "block.animecross.tv_top": "Tv Top",
   "itemGroup.tabdragon_ball": "Dragon Ball",
   "block.animecross.tv_topright": "TV Topright",
   "block.animecross.tvleft": "Tvleft",
   "item.animecross.aircanister": "Air canister",
   "key.animecross.display_self_evil_spirit": "Show Yourself as a evil spirit",
-  "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings"
+  "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings",
+  "item.animecross.uchiha_clan": "Uchiha Clan"
 }

@@ -26,6 +26,16 @@ public class ODMEquipRightclickedProcedure {
 				_setstack.setCount(1);
 				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(AnimecrossModItems.ODM_BLADE.get());
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(AnimecrossModItems.ODM_GEAR_ARMOR_LEGGINGS.get());
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+			}
 			{
 				double _setval = 1;
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
