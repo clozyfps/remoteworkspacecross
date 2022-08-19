@@ -1341,6 +1341,50 @@
         ]
       },
       "path": "~/Naruto"
+    },
+    {
+      "name": "GearSecondRightclicked",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gear_second_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GearSecond",
+      "type": "item",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gear_second"
     }
   ],
   "variable_elements": [
@@ -1493,6 +1537,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "gearsecondactive",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -1524,6 +1574,7 @@
       "effect.animecross.evil_spirit": "Evil Spirit",
       "item.animecross.fire_ball_jutsu": "Fire Ball Jutsu",
       "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
+      "item.animecross.gear_second": "Gear Second",
       "item.animecross.gum_gum_pistol_item": "Gum Gum Pistol ",
       "item.animecross.test": "Test",
       "item.animecross.three_star_dragon_ball": "Three Star Dragon Ball",

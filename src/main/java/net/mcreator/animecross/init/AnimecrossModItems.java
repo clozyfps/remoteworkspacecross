@@ -34,6 +34,7 @@ import net.mcreator.animecross.item.GumGumPistolItemItem;
 import net.mcreator.animecross.item.GumGumPistolItem;
 import net.mcreator.animecross.item.GumGumGatlingItem;
 import net.mcreator.animecross.item.GumGumFruitItem;
+import net.mcreator.animecross.item.GearSecondItem;
 import net.mcreator.animecross.item.GatlingrangeditemItem;
 import net.mcreator.animecross.item.FourStarDragonBallItem;
 import net.mcreator.animecross.item.FiveStarDragonBallItem;
@@ -91,6 +92,7 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> UCHIHA_CLAN = REGISTRY.register("uchiha_clan", () -> new UchihaClanItem());
 	public static final RegistryObject<Item> FIREBALLPROJECTILE = REGISTRY.register("fireballprojectile", () -> new FireballprojectileItem());
 	public static final RegistryObject<Item> FIRE_BALL_JUTSU = REGISTRY.register("fire_ball_jutsu", () -> new FireBallJutsuItem());
+	public static final RegistryObject<Item> GEAR_SECOND = REGISTRY.register("gear_second", () -> new GearSecondItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

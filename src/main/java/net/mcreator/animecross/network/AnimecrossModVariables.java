@@ -97,6 +97,7 @@ public class AnimecrossModVariables {
 			clone.Healthstat = original.Healthstat;
 			clone.evilspirit = original.evilspirit;
 			clone.evilspiritpowerlevel = original.evilspiritpowerlevel;
+			clone.gearsecondactive = original.gearsecondactive;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -158,6 +159,7 @@ public class AnimecrossModVariables {
 		public double Healthstat = 0;
 		public boolean evilspirit = false;
 		public double evilspiritpowerlevel = 0;
+		public boolean gearsecondactive = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -191,6 +193,7 @@ public class AnimecrossModVariables {
 			nbt.putDouble("Healthstat", Healthstat);
 			nbt.putBoolean("evilspirit", evilspirit);
 			nbt.putDouble("evilspiritpowerlevel", evilspiritpowerlevel);
+			nbt.putBoolean("gearsecondactive", gearsecondactive);
 			return nbt;
 		}
 
@@ -221,6 +224,7 @@ public class AnimecrossModVariables {
 			Healthstat = nbt.getDouble("Healthstat");
 			evilspirit = nbt.getBoolean("evilspirit");
 			evilspiritpowerlevel = nbt.getDouble("evilspiritpowerlevel");
+			gearsecondactive = nbt.getBoolean("gearsecondactive");
 		}
 	}
 
@@ -271,6 +275,7 @@ public class AnimecrossModVariables {
 					variables.Healthstat = message.data.Healthstat;
 					variables.evilspirit = message.data.evilspirit;
 					variables.evilspiritpowerlevel = message.data.evilspiritpowerlevel;
+					variables.gearsecondactive = message.data.gearsecondactive;
 				}
 			});
 			context.setPacketHandled(true);
