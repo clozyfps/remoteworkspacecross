@@ -39,7 +39,9 @@ public class GumgummasteryProcedure {
 			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossModVariables.PlayerVariables())).gumgummastery >= 50) {
+				.orElse(new AnimecrossModVariables.PlayerVariables())).gumgummastery >= 50
+				&& (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).gearseconduser == false) {
 			{
 				boolean _setval = true;
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

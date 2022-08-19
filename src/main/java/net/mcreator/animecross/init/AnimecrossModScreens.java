@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.animecross.client.gui.ShenronGifScreen;
+import net.mcreator.animecross.client.gui.MasteryguiScreen;
 import net.mcreator.animecross.client.gui.MainInfoScreen;
 import net.mcreator.animecross.client.gui.ClassguiScreen;
 
@@ -23,6 +24,7 @@ public class AnimecrossModScreens {
 			MenuScreens.register(AnimecrossModMenus.MAIN_INFO, MainInfoScreen::new);
 			MenuScreens.register(AnimecrossModMenus.SHENRON_GIF, ShenronGifScreen::new);
 			MenuScreens.register(AnimecrossModMenus.CLASSGUI, ClassguiScreen::new);
+			MenuScreens.register(AnimecrossModMenus.MASTERYGUI, MasteryguiScreen::new);
 		});
 	}
 }
