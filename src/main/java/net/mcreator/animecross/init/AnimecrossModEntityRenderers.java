@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.mcreator.animecross.client.renderer.ScoutRegimentMemberRenderer;
 import net.mcreator.animecross.client.renderer.MarineRenderer;
 import net.mcreator.animecross.client.renderer.GatlingrangeditemRenderer;
+import net.mcreator.animecross.client.renderer.FireballprojectileRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class AnimecrossModEntityRenderers {
@@ -24,5 +25,6 @@ public class AnimecrossModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossModEntities.MARINE.get(), MarineRenderer::new);
 		event.registerEntityRenderer(AnimecrossModEntities.GATLINGRANGEDITEM.get(), GatlingrangeditemRenderer::new);
 		event.registerEntityRenderer(AnimecrossModEntities.SCOUT_REGIMENT_MEMBER.get(), ScoutRegimentMemberRenderer::new);
+		event.registerEntityRenderer(AnimecrossModEntities.FIREBALLPROJECTILE.get(), FireballprojectileRenderer::new);
 	}
 }

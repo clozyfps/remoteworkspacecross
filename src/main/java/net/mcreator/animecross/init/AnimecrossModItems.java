@@ -37,6 +37,8 @@ import net.mcreator.animecross.item.GumGumFruitItem;
 import net.mcreator.animecross.item.GatlingrangeditemItem;
 import net.mcreator.animecross.item.FourStarDragonBallItem;
 import net.mcreator.animecross.item.FiveStarDragonBallItem;
+import net.mcreator.animecross.item.FireballprojectileItem;
+import net.mcreator.animecross.item.FireBallJutsuItem;
 import net.mcreator.animecross.item.AircanisterItem;
 import net.mcreator.animecross.AnimecrossMod;
 
@@ -70,7 +72,7 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> LIGHTED_PLATE = block(AnimecrossModBlocks.LIGHTED_PLATE, null);
 	public static final RegistryObject<Item> PIN_PLATE = block(AnimecrossModBlocks.PIN_PLATE, null);
 	public static final RegistryObject<Item> FLOOR_PLATE = block(AnimecrossModBlocks.FLOOR_PLATE, null);
-	public static final RegistryObject<Item> TV_BOTTOM = block(AnimecrossModBlocks.TV_BOTTOM, AnimecrossModTabs.TAB_AOT);
+	public static final RegistryObject<Item> TV_BOTTOM = block(AnimecrossModBlocks.TV_BOTTOM, null);
 	public static final RegistryObject<Item> TV_BOTTOM_LEFT = block(AnimecrossModBlocks.TV_BOTTOM_LEFT, null);
 	public static final RegistryObject<Item> TV_BOTTOM_RIGHT = block(AnimecrossModBlocks.TV_BOTTOM_RIGHT, null);
 	public static final RegistryObject<Item> TV_TOP = block(AnimecrossModBlocks.TV_TOP, null);
@@ -87,6 +89,8 @@ public class AnimecrossModItems {
 			() -> new ScoutRegimentCloakItem.Chestplate());
 	public static final RegistryObject<Item> SOUL = REGISTRY.register("soul", () -> new SoulItem());
 	public static final RegistryObject<Item> UCHIHA_CLAN = REGISTRY.register("uchiha_clan", () -> new UchihaClanItem());
+	public static final RegistryObject<Item> FIREBALLPROJECTILE = REGISTRY.register("fireballprojectile", () -> new FireballprojectileItem());
+	public static final RegistryObject<Item> FIRE_BALL_JUTSU = REGISTRY.register("fire_ball_jutsu", () -> new FireBallJutsuItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
