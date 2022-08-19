@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "uchihasymbol",
+    "texture": "fireballjutsu",
     "customModelName": "Normal",
-    "name": "Uchiha Clan",
-    "rarity": "EPIC",
+    "name": "Fire Ball Jutsu",
+    "rarity": "UNCOMMON",
     "creativeTab": {
       "value": "CUSTOM:Naruto"
     },
@@ -25,14 +25,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Learn Uchiha Jutsu and techniques! (Right Click)"
+      "Power Cost: 50 Level Requirement 3 - Use Fire Release to launch a fireball towards your opponent!"
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "UchihaClanRightclicked"
+      "name": "FireBallJutsuRightclicked"
     },
     "hasDispenseBehavior": false,
     "isFood": false,

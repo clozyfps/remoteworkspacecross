@@ -1239,6 +1239,108 @@
         ]
       },
       "path": "~/Naruto"
+    },
+    {
+      "name": "FireballprojectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireballprojectile_while_projectile_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "FireballprojectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireballprojectile_projectile_hits_living_entity",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/One Piece"
+    },
+    {
+      "name": "Fireballprojectile",
+      "type": "rangeditem",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireballprojectile",
+      "path": "~/One Piece"
+    },
+    {
+      "name": "FireBallJutsuRightclicked",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_jutsu_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Naruto"
+    },
+    {
+      "name": "FireBallJutsu",
+      "type": "item",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_ball_jutsu",
+      "path": "~/Naruto"
+    },
+    {
+      "name": "UchihaClanRightclicked",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uchiha_clan_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Naruto"
     }
   ],
   "variable_elements": [
@@ -1420,6 +1522,7 @@
       "block.animecross.floor_plate": "Floor Plate",
       "item.animecross.odm_equip": "ODM Equip",
       "effect.animecross.evil_spirit": "Evil Spirit",
+      "item.animecross.fire_ball_jutsu": "Fire Ball Jutsu",
       "item.animecross.five_star_dragon_ball": "Five Star Dragon Ball",
       "item.animecross.gum_gum_pistol_item": "Gum Gum Pistol ",
       "item.animecross.test": "Test",
@@ -1430,6 +1533,7 @@
       "item.animecross.odmstring": "Odmstring",
       "itemGroup.tabaot": "AOT",
       "item.animecross.slime_leggings": "Slime Leggings",
+      "item.animecross.fireballprojectile": "Fireballprojectile",
       "item.animecross.one_star_dragon_ball": "One Star Dragon Ball",
       "item.animecross.scout_regiment_member_spawn_egg": "Scout Regiment Soldier Spawn Egg",
       "item.animecross.soul": "Soul",
