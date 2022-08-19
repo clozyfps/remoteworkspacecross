@@ -98,6 +98,8 @@ public class AnimecrossModVariables {
 			clone.evilspirit = original.evilspirit;
 			clone.evilspiritpowerlevel = original.evilspiritpowerlevel;
 			clone.gearsecondactive = original.gearsecondactive;
+			clone.Electrokenisis = original.Electrokenisis;
+			clone.Pyrokenisis = original.Pyrokenisis;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -160,6 +162,8 @@ public class AnimecrossModVariables {
 		public boolean evilspirit = false;
 		public double evilspiritpowerlevel = 0;
 		public boolean gearsecondactive = false;
+		public boolean Electrokenisis = false;
+		public boolean Pyrokenisis = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -194,6 +198,8 @@ public class AnimecrossModVariables {
 			nbt.putBoolean("evilspirit", evilspirit);
 			nbt.putDouble("evilspiritpowerlevel", evilspiritpowerlevel);
 			nbt.putBoolean("gearsecondactive", gearsecondactive);
+			nbt.putBoolean("Electrokenisis", Electrokenisis);
+			nbt.putBoolean("Pyrokenisis", Pyrokenisis);
 			return nbt;
 		}
 
@@ -225,6 +231,8 @@ public class AnimecrossModVariables {
 			evilspirit = nbt.getBoolean("evilspirit");
 			evilspiritpowerlevel = nbt.getDouble("evilspiritpowerlevel");
 			gearsecondactive = nbt.getBoolean("gearsecondactive");
+			Electrokenisis = nbt.getBoolean("Electrokenisis");
+			Pyrokenisis = nbt.getBoolean("Pyrokenisis");
 		}
 	}
 
@@ -276,6 +284,8 @@ public class AnimecrossModVariables {
 					variables.evilspirit = message.data.evilspirit;
 					variables.evilspiritpowerlevel = message.data.evilspiritpowerlevel;
 					variables.gearsecondactive = message.data.gearsecondactive;
+					variables.Electrokenisis = message.data.Electrokenisis;
+					variables.Pyrokenisis = message.data.Pyrokenisis;
 				}
 			});
 			context.setPacketHandled(true);

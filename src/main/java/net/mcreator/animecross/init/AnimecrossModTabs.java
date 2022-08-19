@@ -15,6 +15,7 @@ public class AnimecrossModTabs {
 	public static CreativeModeTab TAB_DRAGON_BALL;
 	public static CreativeModeTab TAB_ONE_PIECE;
 	public static CreativeModeTab TAB_NARUTO;
+	public static CreativeModeTab TAB_MOB_PSYCHO;
 
 	public static void load() {
 		TAB_AOT = new CreativeModeTab("tabaot") {
@@ -54,6 +55,17 @@ public class AnimecrossModTabs {
 			@Override
 			public ItemStack makeIcon() {
 				return new ItemStack(AnimecrossModItems.UCHIHA_CLAN.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return true;
+			}
+		}.setBackgroundSuffix("item_search.png");
+		TAB_MOB_PSYCHO = new CreativeModeTab("tabmob_psycho") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(AnimecrossModItems.SOUL.get());
 			}
 
 			@OnlyIn(Dist.CLIENT)

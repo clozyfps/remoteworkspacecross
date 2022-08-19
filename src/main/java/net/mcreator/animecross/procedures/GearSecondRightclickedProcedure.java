@@ -25,91 +25,105 @@ public class GearSecondRightclickedProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new AnimecrossModVariables.PlayerVariables())).gearseconduser == true) {
+				.orElse(new AnimecrossModVariables.PlayerVariables())).max_power > 289 == ((entity
+						.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).level >= 20)) {
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).max_power - 290;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.max_power = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 			if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new AnimecrossModVariables.PlayerVariables())).gearsecondactive == false) {
-				{
-					boolean _setval = true;
-					entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.gearsecondactive = _setval;
-						capability.syncPlayerVariables(entity);
-					});
-				}
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 2000, 7, (false), (false)));
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2000, 4, (false), (false)));
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2000, 2, (false), (false)));
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 2000, 4, (false), (false)));
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level,
-							4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "team add gearsecond");
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level,
-							4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "team modify gearsecond color red");
-				{
-					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"team join gearsecond @s");
-				}
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private LevelAccessor world;
-
-					public void start(LevelAccessor world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
+					.orElse(new AnimecrossModVariables.PlayerVariables())).gearseconduser == true) {
+				if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).gearsecondactive == false) {
+					{
+						boolean _setval = true;
+						entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.gearsecondactive = _setval;
+							capability.syncPlayerVariables(entity);
+						});
 					}
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 2000, 7, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2000, 4, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 2000, 2, (false), (false)));
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 2000, 4, (false), (false)));
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
+								_level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "team add gearsecond");
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
+								_level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+								"team modify gearsecond color red");
+					{
+						Entity _ent = entity;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null)
+							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+									"team join gearsecond @s");
+					}
+					new Object() {
+						private int ticks = 0;
+						private float waitTicks;
+						private LevelAccessor world;
 
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
+						public void start(LevelAccessor world, int waitTicks) {
+							this.waitTicks = waitTicks;
+							MinecraftForge.EVENT_BUS.register(this);
+							this.world = world;
 						}
-					}
 
-					private void run() {
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands()
-									.performCommand(
-											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-													new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-											"team remove gearsecond");
-						{
-							boolean _setval = false;
-							entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-								capability.gearsecondactive = _setval;
-								capability.syncPlayerVariables(entity);
-							});
+						@SubscribeEvent
+						public void tick(TickEvent.ServerTickEvent event) {
+							if (event.phase == TickEvent.Phase.END) {
+								this.ticks += 1;
+								if (this.ticks >= this.waitTicks)
+									run();
+							}
 						}
-						MinecraftForge.EVENT_BUS.unregister(this);
+
+						private void run() {
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands()
+										.performCommand(
+												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+														new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+												"team remove gearsecond");
+							{
+								boolean _setval = false;
+								entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+									capability.gearsecondactive = _setval;
+									capability.syncPlayerVariables(entity);
+								});
+							}
+							MinecraftForge.EVENT_BUS.unregister(this);
+						}
+					}.start(world, 2000);
+					if (entity instanceof Player _player)
+						_player.getCooldowns().addCooldown(itemstack.getItem(), 7000);
+				} else if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).gearsecondactive == true) {
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.HEALTH_BOOST);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.MOVEMENT_SPEED);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.DAMAGE_BOOST);
+					if (entity instanceof LivingEntity _entity)
+						_entity.removeEffect(MobEffects.REGENERATION);
+					{
+						boolean _setval = false;
+						entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+							capability.gearsecondactive = _setval;
+							capability.syncPlayerVariables(entity);
+						});
 					}
-				}.start(world, 2000);
-				if (entity instanceof Player _player)
-					_player.getCooldowns().addCooldown(itemstack.getItem(), 7000);
-			} else if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new AnimecrossModVariables.PlayerVariables())).gearsecondactive == true) {
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(MobEffects.HEALTH_BOOST);
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(MobEffects.MOVEMENT_SPEED);
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(MobEffects.DAMAGE_BOOST);
-				if (entity instanceof LivingEntity _entity)
-					_entity.removeEffect(MobEffects.REGENERATION);
-				{
-					boolean _setval = false;
-					entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-						capability.gearsecondactive = _setval;
-						capability.syncPlayerVariables(entity);
-					});
 				}
 			}
 		}

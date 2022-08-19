@@ -1,13 +1,17 @@
 package net.mcreator.animecross.procedures;
 
+import net.minecraftforge.items.ItemHandlerHelper;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.animecross.network.AnimecrossModVariables;
+import net.mcreator.animecross.init.AnimecrossModItems;
 
 import javax.annotation.Nullable;
 
@@ -48,6 +52,11 @@ public class GumgummasteryProcedure {
 					capability.gearseconduser = _setval;
 					capability.syncPlayerVariables(entity);
 				});
+			}
+			if (entity instanceof Player _player) {
+				ItemStack _setstack = new ItemStack(AnimecrossModItems.GEAR_SECOND.get());
+				_setstack.setCount(1);
+				ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
 			}
 		}
 	}

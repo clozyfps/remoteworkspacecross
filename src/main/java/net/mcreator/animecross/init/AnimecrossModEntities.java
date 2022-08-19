@@ -16,7 +16,9 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
+import net.mcreator.animecross.entity.ShigeoEntity;
 import net.mcreator.animecross.entity.ScoutRegimentMemberEntity;
+import net.mcreator.animecross.entity.PyrobombEntity;
 import net.mcreator.animecross.entity.OdmstringEntity;
 import net.mcreator.animecross.entity.MarineEntity;
 import net.mcreator.animecross.entity.GumGumPistolEntity;
@@ -52,6 +54,14 @@ public class AnimecrossModEntities {
 			EntityType.Builder.<FireballprojectileEntity>of(FireballprojectileEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(FireballprojectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ShigeoEntity>> SHIGEO = register("shigeo",
+			EntityType.Builder.<ShigeoEntity>of(ShigeoEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(3).setCustomClientFactory(ShigeoEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PyrobombEntity>> PYROBOMB = register("projectile_pyrobomb",
+			EntityType.Builder.<PyrobombEntity>of(PyrobombEntity::new, MobCategory.MISC).setCustomClientFactory(PyrobombEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -62,6 +72,7 @@ public class AnimecrossModEntities {
 		event.enqueueWork(() -> {
 			MarineEntity.init();
 			ScoutRegimentMemberEntity.init();
+			ShigeoEntity.init();
 		});
 	}
 
@@ -69,5 +80,6 @@ public class AnimecrossModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(MARINE.get(), MarineEntity.createAttributes().build());
 		event.put(SCOUT_REGIMENT_MEMBER.get(), ScoutRegimentMemberEntity.createAttributes().build());
+		event.put(SHIGEO.get(), ShigeoEntity.createAttributes().build());
 	}
 }

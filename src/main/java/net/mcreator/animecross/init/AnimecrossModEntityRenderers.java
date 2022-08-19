@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.animecross.client.renderer.ShigeoRenderer;
 import net.mcreator.animecross.client.renderer.ScoutRegimentMemberRenderer;
 import net.mcreator.animecross.client.renderer.MarineRenderer;
 import net.mcreator.animecross.client.renderer.GatlingrangeditemRenderer;
@@ -26,5 +27,7 @@ public class AnimecrossModEntityRenderers {
 		event.registerEntityRenderer(AnimecrossModEntities.GATLINGRANGEDITEM.get(), GatlingrangeditemRenderer::new);
 		event.registerEntityRenderer(AnimecrossModEntities.SCOUT_REGIMENT_MEMBER.get(), ScoutRegimentMemberRenderer::new);
 		event.registerEntityRenderer(AnimecrossModEntities.FIREBALLPROJECTILE.get(), FireballprojectileRenderer::new);
+		event.registerEntityRenderer(AnimecrossModEntities.SHIGEO.get(), ShigeoRenderer::new);
+		event.registerEntityRenderer(AnimecrossModEntities.PYROBOMB.get(), ThrownItemRenderer::new);
 	}
 }
