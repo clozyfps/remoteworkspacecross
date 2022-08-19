@@ -1536,6 +1536,122 @@
       "locked_code": false,
       "registry_name": "pyrobomb",
       "path": "~/Mob Psycho"
+    },
+    {
+      "name": "PyroBombItemRightclicked",
+      "type": "procedure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyro_bomb_item_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "PyroBombItem",
+      "type": "item",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pyro_bomb_item",
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "FireExplosionRightclicked",
+      "type": "procedure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_explosion_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FireExplosion",
+      "type": "item",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_explosion"
+    },
+    {
+      "name": "AirWhipEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_whip_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mob Psycho"
+    },
+    {
+      "name": "AirWhip",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "air_whip",
+      "path": "~/Mob Psycho"
     }
   ],
   "variable_elements": [
@@ -1715,6 +1831,7 @@
       "item.animecross.slime_boots": "Slime Boots",
       "item.animecross.marine_spawn_egg": "Marine Spawn Egg",
       "item.animecross.onelevel": "One level",
+      "item.animecross.air_whip": "Air Whip",
       "item.animecross.odm_gear_armor_boots": "ODM Gear Armor Boots",
       "item.animecross.odm_gear_armor_helmet": "ODM Gear Armor Helmet",
       "item.animecross.sixth_star_dragon_ball": "Sixth Star Dragon Ball",
@@ -1724,12 +1841,13 @@
       "block.animecross.tv_bottom_right": "Tv Bottom Right",
       "item.animecross.gum_gum_gatling": "Gum Gum Gatling",
       "item.animecross.gum_gum_fruit": "Gum Gum Fruit",
-      "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
       "itemGroup.tabone_piece": "One Piece",
+      "item.animecross.gum_gum_rocket": "Gum Gum Rocket",
       "block.animecross.tv_top_left": "TV Top Left",
       "item.animecross.scout_regiment_cloak_boots": "Scout Regiment Cloak Boots",
       "block.animecross.tv_bottom": "Tv Bottom",
       "item.animecross.four_star_dragon_ball": "Four Star Dragon Ball",
+      "item.animecross.fire_explosion": "Fire Explosion",
       "item.animecross.gatlingrangeditem": "Gatlingrangeditem",
       "entity.animecross.scout_regiment_member": "Scout Regiment Soldier",
       "block.animecross.floor_plate": "Floor Plate",
@@ -1776,7 +1894,8 @@
       "effect.animecross.esper": "Esper",
       "item.animecross.shigeo_spawn_egg": "Shigeo  Spawn Egg",
       "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings",
-      "item.animecross.uchiha_clan": "Uchiha Clan"
+      "item.animecross.uchiha_clan": "Uchiha Clan",
+      "item.animecross.pyro_bomb_item": "Pyro Bomb Item"
     }
   },
   "foldersRoot": {

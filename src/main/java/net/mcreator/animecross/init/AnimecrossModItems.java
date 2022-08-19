@@ -23,6 +23,7 @@ import net.mcreator.animecross.item.SixthStarDragonBallItem;
 import net.mcreator.animecross.item.SeventhDragonBallItem;
 import net.mcreator.animecross.item.ScoutRegimentCloakItem;
 import net.mcreator.animecross.item.PyrobombItem;
+import net.mcreator.animecross.item.PyroBombItemItem;
 import net.mcreator.animecross.item.OnelevelItem;
 import net.mcreator.animecross.item.OneStarDragonBallItem;
 import net.mcreator.animecross.item.OdmstringItem;
@@ -40,8 +41,10 @@ import net.mcreator.animecross.item.GatlingrangeditemItem;
 import net.mcreator.animecross.item.FourStarDragonBallItem;
 import net.mcreator.animecross.item.FiveStarDragonBallItem;
 import net.mcreator.animecross.item.FireballprojectileItem;
+import net.mcreator.animecross.item.FireExplosionItem;
 import net.mcreator.animecross.item.FireBallJutsuItem;
 import net.mcreator.animecross.item.AircanisterItem;
+import net.mcreator.animecross.item.AirWhipItem;
 import net.mcreator.animecross.AnimecrossMod;
 
 public class AnimecrossModItems {
@@ -97,6 +100,9 @@ public class AnimecrossModItems {
 	public static final RegistryObject<Item> SHIGEO = REGISTRY.register("shigeo_spawn_egg",
 			() -> new ForgeSpawnEggItem(AnimecrossModEntities.SHIGEO, -16777216, -1, new Item.Properties().tab(AnimecrossModTabs.TAB_MOB_PSYCHO)));
 	public static final RegistryObject<Item> PYROBOMB = REGISTRY.register("pyrobomb", () -> new PyrobombItem());
+	public static final RegistryObject<Item> PYRO_BOMB_ITEM = REGISTRY.register("pyro_bomb_item", () -> new PyroBombItemItem());
+	public static final RegistryObject<Item> FIRE_EXPLOSION = REGISTRY.register("fire_explosion", () -> new FireExplosionItem());
+	public static final RegistryObject<Item> AIR_WHIP = REGISTRY.register("air_whip", () -> new AirWhipItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
