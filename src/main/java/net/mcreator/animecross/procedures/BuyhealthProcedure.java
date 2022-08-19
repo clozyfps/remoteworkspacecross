@@ -11,7 +11,7 @@ public class BuyhealthProcedure {
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
 				&& (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat == 1) {
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat == 0) {
 			{
 				String _setval = "1";
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -24,6 +24,14 @@ public class BuyhealthProcedure {
 						.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points - 1;
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Stat_Points = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -47,6 +55,14 @@ public class BuyhealthProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
@@ -64,6 +80,14 @@ public class BuyhealthProcedure {
 						.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points - 1;
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Stat_Points = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -87,6 +111,14 @@ public class BuyhealthProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
@@ -107,6 +139,14 @@ public class BuyhealthProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
@@ -116,6 +156,14 @@ public class BuyhealthProcedure {
 				String _setval = "5";
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Health = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -147,6 +195,14 @@ public class BuyhealthProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
@@ -164,6 +220,14 @@ public class BuyhealthProcedure {
 						.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points - 1;
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Stat_Points = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -187,6 +251,14 @@ public class BuyhealthProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
@@ -207,6 +279,14 @@ public class BuyhealthProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
@@ -216,6 +296,14 @@ public class BuyhealthProcedure {
 				String _setval = "9";
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Health = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -247,6 +335,14 @@ public class BuyhealthProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 		if ((entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new AnimecrossModVariables.PlayerVariables())).Stat_Points >= 1
@@ -256,6 +352,14 @@ public class BuyhealthProcedure {
 				String _setval = "11";
 				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.Health = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = (entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new AnimecrossModVariables.PlayerVariables())).Healthstat + 1;
+				entity.getCapability(AnimecrossModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.Healthstat = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

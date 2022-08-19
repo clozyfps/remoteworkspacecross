@@ -148,6 +148,17 @@
           "x": 262,
           "y": 140
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Shinobi",
+          "width": 61,
+          "height": 20,
+          "name": "Shinobi",
+          "x": 97,
+          "y": 139
+        }
       }
     ],
     "gridSettings": {

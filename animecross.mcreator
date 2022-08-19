@@ -1192,6 +1192,53 @@
         ]
       },
       "path": "~/Mob Psycho"
+    },
+    {
+      "name": "UchihaClan",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "uchiha_clan",
+      "path": "~/Naruto"
+    },
+    {
+      "name": "Naruto",
+      "type": "tab",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "naruto",
+      "path": "~/Naruto"
+    },
+    {
+      "name": "FireballprojectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fireballprojectile_projectile_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Naruto"
     }
   ],
   "variable_elements": [
@@ -1398,13 +1445,15 @@
       "block.animecross.tv_bottom_left": "Tv Bottom Left",
       "item.animecross.odm_gear": "ODM Gear",
       "block.animecross.tv_single": "Tv Single",
+      "itemGroup.tabnaruto": "Naruto",
       "block.animecross.tv_top": "Tv Top",
       "itemGroup.tabdragon_ball": "Dragon Ball",
       "block.animecross.tv_topright": "TV Topright",
       "block.animecross.tvleft": "Tvleft",
       "item.animecross.aircanister": "Air canister",
       "key.animecross.display_self_evil_spirit": "Show Yourself as a evil spirit",
-      "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings"
+      "item.animecross.scout_regiment_cloak_leggings": "Scout Regiment Cloak Leggings",
+      "item.animecross.uchiha_clan": "Uchiha Clan"
     }
   },
   "foldersRoot": {
@@ -1436,6 +1485,10 @@
       },
       {
         "name": "Mob Psycho",
+        "children": []
+      },
+      {
+        "name": "Naruto",
         "children": []
       }
     ]

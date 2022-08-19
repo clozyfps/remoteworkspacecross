@@ -13,6 +13,7 @@ import net.mcreator.animecross.client.model.Modelwingsofffreee;
 import net.mcreator.animecross.client.model.Modelslime;
 import net.mcreator.animecross.client.model.Modelodm;
 import net.mcreator.animecross.client.model.Modelluffyfist;
+import net.mcreator.animecross.client.model.Modelfireball2;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class AnimecrossModModels {
@@ -21,6 +22,7 @@ public class AnimecrossModModels {
 		event.registerLayerDefinition(Modelluffyfist.LAYER_LOCATION, Modelluffyfist::createBodyLayer);
 		event.registerLayerDefinition(Modelodm.LAYER_LOCATION, Modelodm::createBodyLayer);
 		event.registerLayerDefinition(Modelslime.LAYER_LOCATION, Modelslime::createBodyLayer);
+		event.registerLayerDefinition(Modelfireball2.LAYER_LOCATION, Modelfireball2::createBodyLayer);
 		event.registerLayerDefinition(Modelwingsofffreee.LAYER_LOCATION, Modelwingsofffreee::createBodyLayer);
 	}
 }
